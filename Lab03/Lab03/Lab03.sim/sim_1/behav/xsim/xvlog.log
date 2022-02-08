@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/round.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/round_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_tb

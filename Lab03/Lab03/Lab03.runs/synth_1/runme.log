@@ -1,0 +1,347 @@
+
+*** Running vivado
+    with args -log temp_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source temp_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source temp_top.tcl -notrace
+Command: synth_design -top temp_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2344
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1140.766 ; gain = 51.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'temp_top' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TempSensorCtl.vhd:59]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TempSensorCtl.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:500]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (1#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TempSensorCtl.vhd:329]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TempSensorCtl.vhd:324]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (2#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/TempSensorCtl.vhd:59]
+INFO: [Synth 8-6157] synthesizing module 'tconvert' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/tconvert.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tconvert' (3#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/tconvert.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'conv_sgnmag' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/conv_sgnmag.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'conv_sgnmag' (4#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/conv_sgnmag.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/round.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'round' (5#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/round.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dbl_dabble_ext' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:15]
+INFO: [Synth 8-251] dbl_dabble input: x [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:22]
+INFO: [Synth 8-251] add3o 4 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 5 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 6 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 7 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 8 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 9 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 10 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 11 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 12 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:29]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:33]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:37]
+INFO: [Synth 8-251] add3o 13 4'bxxxx 4'bxxxx 4'bxxxx 4'bxxxx 13'bxxxxxxxxxxxxx [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:41]
+INFO: [Synth 8-251] result    x    x   x   x [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'dbl_dabble_ext' (6#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dbl_dabble_ext.sv:15]
+WARNING: [Synth 8-689] width (5) of port connection 'thousands' does not match port width (4) of module 'dbl_dabble_ext' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:53]
+WARNING: [Synth 8-689] width (5) of port connection 'hundreds' does not match port width (4) of module 'dbl_dabble_ext' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:53]
+WARNING: [Synth 8-689] width (5) of port connection 'tens' does not match port width (4) of module 'dbl_dabble_ext' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:53]
+WARNING: [Synth 8-689] width (5) of port connection 'ones' does not match port width (4) of module 'dbl_dabble_ext' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_control' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/sevenseg_control.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (7#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'count_3bit' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/count_3bit.sv:11]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'count_3bit' (8#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/count_3bit.sv:11]
+WARNING: [Synth 8-689] width (3) of port connection 'q' does not match port width (2) of module 'count_3bit' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/sevenseg_control.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/mux8.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (9#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/mux8.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dec_3_8_n.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dec_3_8_n.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (10#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/dec_3_8_n.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_n' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/seven_seg_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_n' (11#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/seven_seg_n.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_control' (12#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/sevenseg_control.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'temp_top' (13#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1199.141 ; gain = 110.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1199.141 ; gain = 110.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1199.141 ; gain = 110.102
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1199.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Constraints/temp_con.xdc]
+Finished Parsing XDC File [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Constraints/temp_con.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Constraints/temp_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/temp_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/temp_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1316.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1316.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                             0000
+                 ststart |                             1111 |                             0001
+                 stwrite |                             0000 |                             0011
+                  stsack |                             0010 |                             0110
+                  stread |                             0111 |                             0010
+            stmnackstart |                             0110 |                             1001
+                  stmack |                             0100 |                             0111
+             stmnackstop |                             0101 |                             1000
+                  ststop |                             0011 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl'
+WARNING: [Synth 8-327] inferring latch for variable 'segs_n_reg' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/seven_seg_n.sv:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 23    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	  27 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 23    
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 30    
+	   4 Input    1 Bit        Muxes := 20    
+	   8 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1316.363 ; gain = 227.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1319.473 ; gain = 230.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1331.773 ; gain = 242.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    31|
+|3     |LUT1   |    41|
+|4     |LUT2   |    20|
+|5     |LUT3   |    71|
+|6     |LUT4   |    35|
+|7     |LUT5   |    65|
+|8     |LUT6   |    95|
+|9     |FDRE   |   107|
+|10    |FDSE   |    26|
+|11    |IBUF   |    17|
+|12    |IOBUF  |     2|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1334.039 ; gain = 127.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1334.039 ; gain = 245.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1346.094 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1346.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1346.094 ; gain = 257.055
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/Lab03.runs/synth_1/temp_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file temp_top_utilization_synth.rpt -pb temp_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 12:16:13 2022...

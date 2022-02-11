@@ -30,8 +30,8 @@ module temp_top(input logic clk, rst, c_f,
                 );
  logic tmp_rdy, tmp_err; // unused temp controller outputs
  logic [12:0] temp;// 13-bit two's complement result with 4-bit fractional part
- logic [16:0] tx10_w;
- logic [15:0] mag;
+ logic [17:0] tx10_w;
+ logic [16:0] mag;
  logic [12:0] round;
  logic [4:0] thou, hund, tens, ones;
  logic sign;

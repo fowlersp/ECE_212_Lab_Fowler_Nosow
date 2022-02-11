@@ -32,8 +32,8 @@ module sevenseg_control(input logic[6:0] d0, d1, d2, d3, d4, d5,
     logic dec; 
     
     period_enb U_ENB(.clk, .rst, .clr(1'b0), .enb_out);
-    count_3bit U_COUNT3C (.clk, .rst, .enb(enb_out), .q(sel)); 
-    mux8 #(.W(7)) U_MUX8 (.d0, .d1, .d2, .d3, .d4, .d5, .d6(7'b0), .d7(7'd0), .sel, .y);
+    count_3bit #(.W(3)) U_COUNT3C (.clk, .rst, .enb(enb_out), .q(sel)); 
+    mux8 #(.W(7)) U_MUX8 (.d0, .d1, .d2, .d3, .d4, .d5, .d6(7'b1000000), .d7(7'b1000000), .sel, .y);
     dec_3_8_n U_DEC3 (.a(sel), .y_n(an_n));
     seven_seg_n U_SSN(.d(y), .segs_n, .dp_n(dp));
     

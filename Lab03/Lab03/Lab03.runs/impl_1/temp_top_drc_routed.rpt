@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Feb 10 21:23:07 2022
+| Date         : Sun Feb 13 16:08:58 2022
 | Host         : ECE419-92QX0Q2 running 64-bit major release  (build 9200)
 | Command      : report_drc -file temp_top_drc_routed.rpt -pb temp_top_drc_routed.pb -rpx temp_top_drc_routed.rpx
 | Design       : temp_top
@@ -49,12 +49,12 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net nolabel_line72/U_COUNT3C/E[0] is a gated clock net sourced by a combinational pin nolabel_line72/U_COUNT3C/segs_n_reg[6]_i_2/O, cell nolabel_line72/U_COUNT3C/segs_n_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net U_TCON/E[0] is a gated clock net sourced by a combinational pin U_TCON/segs_n_reg[6]_i_2/O, cell U_TCON/segs_n_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net nolabel_line72/U_SSN/segs_n_reg[6]/G0 is a gated clock net sourced by a combinational pin nolabel_line72/U_SSN/segs_n_reg[6]/L3_2/O, cell nolabel_line72/U_SSN/segs_n_reg[6]/L3_2 (in nolabel_line72/U_SSN/segs_n_reg[6] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net nolabel_line84/U_SSN/segs_n_reg[6]/G0 is a gated clock net sourced by a combinational pin nolabel_line84/U_SSN/segs_n_reg[6]/L3_2/O, cell nolabel_line84/U_SSN/segs_n_reg[6]/L3_2 (in nolabel_line84/U_SSN/segs_n_reg[6] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

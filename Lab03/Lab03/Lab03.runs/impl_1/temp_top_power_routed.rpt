@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Feb 10 21:23:08 2022
+| Date             : Sun Feb 13 16:09:00 2022
 | Host             : ECE419-92QX0Q2 running 64-bit major release  (build 9200)
 | Command          : report_power -file temp_top_power_routed.rpt -pb temp_top_power_summary_routed.pb -rpx temp_top_power_routed.rpx
 | Design           : temp_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.103        |
+| Total On-Chip Power (W)  | 0.106        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
+| Dynamic (W)              | 0.009        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      526 |       --- |             --- |
-|   LUT as Logic |     0.002 |      271 |     63400 |            0.43 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.002 |      533 |       --- |             --- |
+|   LUT as Logic |     0.002 |      277 |     63400 |            0.44 |
 |   CARRY4       |    <0.001 |       31 |     15850 |            0.20 |
 |   Register     |    <0.001 |      141 |    126800 |            0.11 |
 |   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |     0.001 |      405 |       --- |             --- |
-| I/O            |     0.001 |       35 |       210 |           16.67 |
+| Signals        |     0.002 |      413 |       --- |             --- |
+| I/O            |     0.004 |       35 |       210 |           16.67 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.103 |          |           |                 |
+| Total          |     0.106 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.020 |       0.005 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,13 +137,12 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| temp_top         |     0.006 |
-|   U_TSCTL        |     0.002 |
-|   nolabel_line72 |     0.002 |
-|     U_SSN        |     0.001 |
-+------------------+-----------+
++-----------+-----------+
+| Name      | Power (W) |
++-----------+-----------+
+| temp_top  |     0.009 |
+|   U_TCON  |     0.002 |
+|   U_TSCTL |     0.002 |
++-----------+-----------+
 
 

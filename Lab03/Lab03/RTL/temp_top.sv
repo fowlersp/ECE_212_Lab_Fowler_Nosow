@@ -38,6 +38,7 @@ module temp_top(input logic clk, rst, c_f,
  logic [6:0] cel_far;
  logic [6:0] neg_pos;
  logic [12:0] sel_temp;
+ logic [6:0] d3, d4;
 
 
  // instantiate the VHDL temperature sensor controller
@@ -59,16 +60,27 @@ always_comb
  else 
     sel_temp = SW[15:3];
     
-    if(sign)
-       neg_pos = 7'b0010000;
-    else
-        neg_pos = 7'b1000000;
-    if(c_f)
-        cel_far = 7'd10;
-    else
-        cel_far = 7'd11;
+ if(sign)
+    neg_pos = 7'b0010000;
+ else
+    neg_pos = 7'b1000000;
+    
+ if(c_f)
+     cel_far = 7'd10;
+ else
+     cel_far = 7'd11;
+     
+ if(hund == 4'b0000)
+    d3 = 7'b1000000;
+ else
+    d3 = {2'b00,hund};
+    
+ if(thou == 4'b0000)
+    d4 = 7'b1000000;
+ else
+    d4 = {2'b00,thou};
  end
  
- sevenseg_control(.d0(cel_far), .d1({2'b00, ones}), .d2({2'b01, tens}), .d3({2'b00, hund}), .d4({2'b00, thou}), .d5(neg_pos), .clk, .rst, .segs_n, .an_n, .dp(dp_n));
+ sevenseg_control(.d0(cel_far), .d1({2'b00, ones}), .d2({2'b01, tens}), .d3, .d4, .d5(neg_pos), .clk, .rst, .segs_n, .an_n, .dp(dp_n));
  
 endmodule

@@ -70,7 +70,7 @@ always_comb
  else
      cel_far = 7'd11;
      
- if(hund == 4'b0000)
+ if(hund == 4'b0000 && thou == 4'b0000)
     d3 = 7'b1000000;
  else
     d3 = {2'b00,hund};

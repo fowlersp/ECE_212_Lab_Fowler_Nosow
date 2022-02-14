@@ -22,7 +22,7 @@
 
 module round_tb;
     
-    logic [15:0] tx10_mag;
+    logic [16:0] tx10_mag;
     logic [12:0] tx10_mag_r;
 
 round DUV(.tx10_mag, .tx10_mag_r);

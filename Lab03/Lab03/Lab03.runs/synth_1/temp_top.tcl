@@ -98,6 +98,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/seven_seg_n.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/sevenseg_control.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/tconvert.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab03/Lab03/RTL/temp_top.sv
 }
 read_vhdl -library xil_defaultlib {

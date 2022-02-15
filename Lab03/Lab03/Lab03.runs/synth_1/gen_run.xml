@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1644846331">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1644930061">
   <File Type="PA-TCL" Name="temp_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="temp_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="temp_top_reports.tcl"/>
@@ -75,6 +75,13 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/RTL/tconvert.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/RTL/temp.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

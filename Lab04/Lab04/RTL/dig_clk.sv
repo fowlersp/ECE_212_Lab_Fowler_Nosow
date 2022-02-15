@@ -1,4 +1,4 @@
-module dig_clk(input logic clk, rst, enb_hr, enb_min,
+module dig_clk(input logic clk, enb, rst, enb_hr, enb_min,
  output logic [6:0] h1, h0, m1, m0, s1, s0, am_pm); 
  
  
@@ -15,7 +15,7 @@ single_pulser U_PULSE_MIN (.clk, .din(pb_debounced_min), .d_pulse(min_out));
  
 //period_enb   #(.PERIOD_MS(1000)) U_ENB (.clk, .rst, .clr(1'b0), .enb_out);
 
-sec_cnt  U_SEC (.clk, .rst, .enb(clk), .sec_tens, .sec_ones, .cy_s_t);
+sec_cnt  U_SEC (.clk, .rst, .enb, .sec_tens, .sec_ones, .cy_s_t);
 
 assign adv_min = min_out | cy_s_t;
  

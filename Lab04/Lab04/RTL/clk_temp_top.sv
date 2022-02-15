@@ -33,10 +33,10 @@ module clk_temp_top(input logic clk, rst, sw15, sw14, sw0, enb_hr, enb_min,
     logic [6:0] h1, h0, m1, m0, s1, s0, am_pm;
     
     
-    temp U_TTOP(.clk(enb_out), .rst, .c_f(sw0), .d1(td1), .d2(td2), .d3(td3), .d4(td4), .cel_far, .neg_pos, .tmp_scl, .tmp_sda);
-    dig_clk U_DIG_CLK(.clk(enb_out), .rst, .enb_hr, .enb_min, .h1, .h0, .m1, .m0, .s1, .s0, .am_pm);
+    temp U_TTOP(.clk, .rst, .c_f(sw0), .d1(td1), .d2(td2), .d3(td3), .d4(td4), .cel_far, .neg_pos, .tmp_scl, .tmp_sda);
+    dig_clk U_DIG_CLK(.clk, .enb(enb_out), .rst, .enb_hr, .enb_min, .h1, .h0, .m1, .m0, .s1, .s0, .am_pm);
     
-    fsm U_FSM(.sw1(sw14), .sw2(sw15), .clk(enb_out), .rst, .sel);
+    fsm U_FSM(.sw1(sw15), .sw2(sw14), .clk(enb_out), .rst, .sel);
     
     period_enb #(.PERIOD_MS(1000)) U_ENB(.clk, .rst, .clr(1'b0), .enb_out);
     

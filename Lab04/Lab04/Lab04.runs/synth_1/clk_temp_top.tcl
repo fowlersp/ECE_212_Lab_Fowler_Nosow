@@ -90,15 +90,14 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/conv_sgnmag.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/count_3bit.sv
-  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/counter_modified_hrs.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/count_hr.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/counter_rc_mod.sv
-  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/counter_rc_mod_hrs_rst.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/dbl_dabble.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/dbl_dabble_ext.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/debounce.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/dec_3_8_n.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/dig_clk.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/fsm.sv
-  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/hr_cnt.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/min_cnt.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/mux8.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab04/Lab04/RTL/period_enb.sv

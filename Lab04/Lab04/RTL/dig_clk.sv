@@ -3,7 +3,7 @@ module dig_clk(input logic clk, enb, rst, enb_hr, enb_min,
  
  
 logic [3:0] sec_ones, sec_tens, min_ones, min_tens, hr_ones, hr_tens, ampm, unused;
-logic enb_out, cy_s_t, cy_m_t, cy_h_o, cy_h_t, adv_min, adv_hr, pb_debounced_hr, pb_debounced_min, hr_out, min_out, cy_ampm;
+logic enb_out, cy_s_t, cy_m_t, cy_h_o, cy_h_t, adv_min, adv_hr, pb_debounced_hr, pb_debounced_min, hr_out, min_out, cy_ampm, am;
  
 debounce U_DB_HR (.clk, .pb(enb_hr), .rst, .pb_debounced(pb_debounced_hr));
  
@@ -13,8 +13,6 @@ debounce U_DB_MIN (.clk, .pb(enb_min), .rst, .pb_debounced(pb_debounced_min));
  
 single_pulser U_PULSE_MIN (.clk, .din(pb_debounced_min), .d_pulse(min_out));
  
-//period_enb   #(.PERIOD_MS(1000)) U_ENB (.clk, .rst, .clr(1'b0), .enb_out);
-
 sec_cnt  U_SEC (.clk, .rst, .enb, .sec_tens, .sec_ones, .cy_s_t);
 
 assign adv_min = min_out | cy_s_t;
@@ -22,8 +20,10 @@ assign adv_min = min_out | cy_s_t;
 min_cnt  U_MIN (.clk, .rst, .enb(adv_min), .min_tens, .min_ones, .cy_m_t);
   
 assign adv_hr = hr_out | cy_m_t;  
-  
-hr_cnt  U_HR (.clk, .rst, .enb(adv_hr), .hr_tens, .hr_ones, .cy_h_t);
+
+count_hr COUNTHR (.enb(adv_hr), .clk, .rst, .ones(hr_ones), .tens(hr_tens), .am_pm(am));
+
+//hr_cnt  U_HR (.clk, .rst, .enb(adv_hr), .hr_tens, .hr_ones, .cy_h_t);
 
 counter_rc_mod #(.MOD(2)) U_CNT_AMPM (.clk, .rst, .enb((hr_tens == 4'd1) && (hr_ones == 4'd1) && (adv_hr)), .q(ampm), .cy(cy_ampm));
 

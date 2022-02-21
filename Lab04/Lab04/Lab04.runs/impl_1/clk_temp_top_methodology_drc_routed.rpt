@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Feb 15 11:19:03 2022
+| Date         : Sun Feb 20 19:18:58 2022
 | Host         : ECE419-92QX0Q2 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file clk_temp_top_methodology_drc_routed.rpt -pb clk_temp_top_methodology_drc_routed.pb -rpx clk_temp_top_methodology_drc_routed.rpx
 | Design       : clk_temp_top

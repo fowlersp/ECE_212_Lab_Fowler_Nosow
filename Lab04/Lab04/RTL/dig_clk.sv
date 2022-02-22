@@ -12,6 +12,8 @@ single_pulser U_PULSE_HR (.clk, .din(pb_debounced_hr), .d_pulse(hr_out));
 debounce U_DB_MIN (.clk, .pb(enb_min), .rst, .pb_debounced(pb_debounced_min));
  
 single_pulser U_PULSE_MIN (.clk, .din(pb_debounced_min), .d_pulse(min_out));
+
+//period_enb #(.PERIOD_MS(1000)) U_ENB(.clk, .rst, .clr(1'b0), .enb_out);
  
 sec_cnt  U_SEC (.clk, .rst, .enb, .sec_tens, .sec_ones, .cy_s_t);
 

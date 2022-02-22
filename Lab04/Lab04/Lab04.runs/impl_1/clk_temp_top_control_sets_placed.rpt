@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Feb 20 19:18:28 2022
+| Date         : Sun Feb 20 19:43:26 2022
 | Host         : ECE419-92QX0Q2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file clk_temp_top_control_sets_placed.rpt
 | Design       : clk_temp_top
@@ -74,23 +74,23 @@ Table of Contents
 |  Clock Signal  |                     Enable Signal                    |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+------------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG | rst_IBUF                                             | U_TTOP/U_TSCTL/Inst_TWICtl/int_Rst0              |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | U_TTOP/U_TSCTL/retryCnt[3]_i_2_n_0                   | U_TTOP/U_TSCTL/retryCnt[3]_i_1_n_0               |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | U_DIG_CLK/U_SEC/U_CNT_SEC_ONES/cy_s_o                | U_DIG_CLK/U_SEC/U_CNT_SEC_TENS/q[3]_i_1__4_n_0   |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | U_DIG_CLK/U_MIN/U_CNT_MIN_ONES/cy_m_o                | U_DIG_CLK/U_MIN/U_CNT_MIN_TENS/q[3]_i_1__3_n_0   |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | U_DIG_CLK/U_PULSE_MIN/E[0]                           | U_DIG_CLK/U_MIN/U_CNT_MIN_ONES/q[3]_i_1__0_n_0   |                1 |              4 |         4.00 |
+|  U_ENB/CLK     |                                                      | rst_IBUF                                         |                3 |              4 |         1.33 |
 |  clk_IBUF_BUFG | U_DIG_CLK/U_PULSE_HR/dq2_reg_0[0]                    | U_DIG_CLK/U_PULSE_HR/SR[0]                       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | U_DIG_CLK/U_PULSE_MIN/E[0]                           | U_DIG_CLK/U_MIN/U_CNT_MIN_ONES/q[3]_i_1__0_n_0   |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG | U_ENB/CLK                                            | U_DIG_CLK/U_SEC/U_CNT_SEC_ONES/q[3]_i_1_n_0      |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/FSM_gray_state[3]_i_1_n_0 |                                                  |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG | U_DIG_CLK/COUNTHR/COUNT_HOUR/E[0]                    | U_DIG_CLK/U_PULSE_HR/dq1_reg_0[0]                |                2 |              4 |         2.00 |
-|  U_ENB/CLK     |                                                      | rst_IBUF                                         |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | U_DIG_CLK/U_MIN/U_CNT_MIN_ONES/cy_m_o                | U_DIG_CLK/U_MIN/U_CNT_MIN_TENS/q[3]_i_1__3_n_0   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | U_DIG_CLK/U_SEC/U_CNT_SEC_ONES/cy_s_o                | U_DIG_CLK/U_SEC/U_CNT_SEC_TENS/q[3]_i_1__4_n_0   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | U_TTOP/U_TSCTL/retryCnt[3]_i_2_n_0                   | U_TTOP/U_TSCTL/retryCnt[3]_i_1_n_0               |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG |                                                      | U_TTOP/U_TSCTL/Inst_TWICtl/busFreeCnt[7]_i_1_n_0 |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/ERR_O_reg_0               |                                                  |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                                  |                5 |              8 |         1.60 |
 |  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/sclCnt[7]_i_2_n_0         | U_TTOP/U_TSCTL/Inst_TWICtl/sclCnt0_0             |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                                  |                5 |              8 |         1.60 |
 |  clk_IBUF_BUFG |                                                      | rst_IBUF                                         |                8 |             12 |         1.50 |
 |  clk_IBUF_BUFG | U_TTOP/U_TSCTL/Inst_TWICtl/E[0]                      |                                                  |                5 |             13 |         2.60 |
-|  clk_IBUF_BUFG |                                                      | U_TTOP/U_TSCTL/clear                             |                5 |             17 |         3.40 |
 |  clk_IBUF_BUFG |                                                      | U_SEG/U_ENB/q[0]_i_1__0_n_0                      |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG |                                                      | U_TTOP/U_TSCTL/clear                             |                5 |             17 |         3.40 |
 |  clk_IBUF_BUFG |                                                      | U_TTOP/U_TSCTL/Inst_TWICtl/timeOutCnt0           |                5 |             20 |         4.00 |
 |  clk_IBUF_BUFG | U_DIG_CLK/U_DB_HR/sel__0                             | U_DIG_CLK/U_DB_HR/pb_edge                        |                6 |             21 |         3.50 |
 |  clk_IBUF_BUFG | U_DIG_CLK/U_DB_MIN/count[0]_i_2__0_n_0               | U_DIG_CLK/U_DB_MIN/pb_edge                       |                6 |             21 |         3.50 |

@@ -18,41 +18,41 @@ int main(int argc, char** argv) {
     while(1){
         senseR = analogRead(RIGHT_SENSOR);
         senseL = analogRead(LEFT_SENSOR);
-        if(senseR < 0x150 && senseL < 0x150){
+        if(senseR < 0x170 && senseL < 0x170){
             if(cnt > 50000){
                 //while(senseR < 0x150 && senseL < 0x150){
                     writeLEDs(0xF);
                     RBACK = 0;
-                    RFORWARD = 0xD000;
+                    RFORWARD = 0xFFFF;
                     LBACK = 0;
-                    LFORWARD = 0xD000;
+                    LFORWARD = 0xFFFF;
                 //}
                 //cnt = 0;
             }
             else{
                 writeLEDs(0x9);
                 RBACK = 0;
-                RFORWARD = 0xB000;
+                RFORWARD = 0xFFFF;
                 LBACK = 0;
-                LFORWARD = 0xB000;
+                LFORWARD = 0xFFFF;
                 cnt++;
             }
             
         }
-        else if(senseR < 0x150){
+        else if(senseR < 0x170){
             writeLEDs(0x1);
             RBACK = 0;
-            RFORWARD = 0x9500;
+            RFORWARD = 0xF000;
             LBACK = 0;
-            LFORWARD = 0x0700;
+            LFORWARD = 0x7000;
             cnt = 0;
         }
-        else if(senseL < 0x150){
+        else if(senseL < 0x170){
             writeLEDs(0x8);
             RBACK = 0;
-            RFORWARD = 0x0700;
+            RFORWARD = 0x7000;
             LBACK = 0;
-            LFORWARD = 0x9500;
+            LFORWARD = 0xF000;
             cnt = 0;
         } 
         else{

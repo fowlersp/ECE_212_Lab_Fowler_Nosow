@@ -3,6 +3,9 @@
  * Author: fowlersp
  *
  * Created on February 22, 2022, 8:10 AM
+ * Description: This code turns the leds on in a cyclic order such that it displays them changing.
+ * When the button is pressed that cyclic order changes directions.
+ * This code uses the ece212.h to control the leds.
  */
 
 #include "ece212.h"

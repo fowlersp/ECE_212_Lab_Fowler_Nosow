@@ -1,3 +1,14 @@
+//-----------------------------------------------------------------------------
+// Module Name   : debounce
+// Project       : RTL Hardware Design and Verification using SystemVerilog
+//-----------------------------------------------------------------------------
+// Author        : John Nestor  <nestorj@lafayette.edu>
+// Created       : Feb 2021
+//-----------------------------------------------------------------------------
+// Description   : Debouncer patterned after "Debounce Logic Circuit
+// (with VHDL example)" on the Digikey EEWiki
+//-----------------------------------------------------------------------------
+
 module debounce(input logic clk, pb, rst, output logic pb_debounced);
    parameter CLKPD_NS = 10;
    parameter CLKFREQ = 1_000_000_000 / CLKPD_NS;    // clock frequency in Hertz

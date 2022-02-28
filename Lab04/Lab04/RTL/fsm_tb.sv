@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Engineer: Sam Fowler
 // Create Date: 02/15/2022 09:35:57 AM
-// Design Name: 
 // Module Name: fsm_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: Simple testbench for the FSM to make sure it will select the different states based on when the button is pressed.
 //////////////////////////////////////////////////////////////////////////////////
 
 

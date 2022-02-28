@@ -1,3 +1,12 @@
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Sam Fowler
+// Create Date: 02/15/2022 08:17:55 AM
+// Module Name: sec_cnt
+// Description: This module is used to count and store the time in seconds for the digital clock. 
+// It will reset every 60 seconds.
+//////////////////////////////////////////////////////////////////////////////////
 module sec_cnt(
                 input logic clk, rst, enb,
                 output logic [3:0] sec_tens, sec_ones,

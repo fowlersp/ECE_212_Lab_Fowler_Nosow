@@ -1,22 +1,8 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/08/2022 09:24:21 AM
-// Design Name: 
-// Module Name: conv_sgn_mag_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Create Date: 02/15/2022 07:52:10 AM
+// Module Name: conv_sgnmag
+// Description: Gets the sign and the magnitude of the converted temperature
 //////////////////////////////////////////////////////////////////////////////////
 
 

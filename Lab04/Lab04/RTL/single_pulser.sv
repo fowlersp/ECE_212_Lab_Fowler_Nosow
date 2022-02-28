@@ -1,23 +1,13 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/15/2022 08:14:22 AM
-// Design Name: 
-// Module Name: single_pulser
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+// Module Name   : single_pulser
+// Project       : RTL Hardware Design and Verification using SystemVerilog
+//-----------------------------------------------------------------------------
+// Author        : John Nestor  <nestorj@lafayette.edu>
+// Created       : Feb. 2021
+//-----------------------------------------------------------------------------
+// Description   : Output a single pulse on when a rising edge is detected
+// on the input din
+//-----------------------------------------------------------------------------
 
 
 module single_pulser(input logic clk, din, output logic d_pulse);

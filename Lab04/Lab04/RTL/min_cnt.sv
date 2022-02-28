@@ -1,3 +1,10 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Sam Fowler
+// Create Date: 02/15/2022 08:23:55 AM
+// Module Name: min_cnt
+// Description: This method is used to count and store the minutes for the clock display.
+//////////////////////////////////////////////////////////////////////////////////
 module min_cnt(
                 input logic clk, rst, enb,
                 output logic [3:0] min_tens, min_ones,

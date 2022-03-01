@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/15/2022 08:29:56 AM
-// Design Name: 
+// Engineer: Sam Fowler
+// Create Date: 02/15/2022 08:29:56 AM 
 // Module Name: fsm
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: This module is an FSM that goes about selecting the state that will be displayed on the seven segment display.
 //////////////////////////////////////////////////////////////////////////////////
 
 

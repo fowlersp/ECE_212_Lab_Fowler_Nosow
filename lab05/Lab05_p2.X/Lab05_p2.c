@@ -3,6 +3,9 @@
  * Author: fowlersp
  *
  * Created on February 22, 2022, 9:17 AM
+ * Description: This code will move the LafBot forward for half a second then have it stop for 
+ * one second then move back for another half a second then stop for a second. 
+ * This is all done at 50% duty cycle.
  */
 
 #include "ece212.h"

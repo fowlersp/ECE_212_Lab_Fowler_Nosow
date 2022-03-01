@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Engineer: Sam Fowler
 // Create Date: 02/20/2022 07:02:03 PM
-// Design Name: 
 // Module Name: count_hr
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: This module counts the hours for the clock and keeps track of am and pm
 //////////////////////////////////////////////////////////////////////////////////
 
 

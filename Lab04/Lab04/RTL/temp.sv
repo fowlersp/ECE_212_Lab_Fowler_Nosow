@@ -1,22 +1,9 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Engineer: Sam Fowler
 // Create Date: 02/15/2022 07:46:19 AM
-// Design Name: 
 // Module Name: temp
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: This is the top module for the temperature control without the built in seven segment display from the previous lab.
 //////////////////////////////////////////////////////////////////////////////////
 
 

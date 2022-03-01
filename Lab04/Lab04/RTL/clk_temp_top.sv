@@ -1,22 +1,10 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/15/2022 09:01:27 AM
-// Design Name: 
+// Engineer: Sam Fowler
+// Create Date: 02/15/2022 09:01:27 AM 
 // Module Name: clk_temp_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: This method combines the clock module and the temperature module into one system.
+// This uses the FSM and multiplexer to designate what will be sent to the seven segment display module.
 //////////////////////////////////////////////////////////////////////////////////
 
 

@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
-// 
+// Engineer: Sam Fowler
 // Create Date: 02/15/2022 08:17:55 AM
-// Design Name: 
 // Module Name: clock_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: This is the clock top module with out the seven segment control included in it.
+// This controls all parts of the clock method.
 //////////////////////////////////////////////////////////////////////////////////
 
 module clock_top(input logic clk, rst, mode, enb_hr, enb_min,

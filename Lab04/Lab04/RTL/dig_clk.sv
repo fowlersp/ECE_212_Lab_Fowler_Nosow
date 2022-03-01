@@ -1,3 +1,14 @@
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Sam Fowler
+// Create Date: 02/15/2022 08:17:55 AM
+// Module Name: dig_clk
+// Description: This is the clock top module with out the seven segment control included in it.
+// This controls all parts of the clock method.
+//////////////////////////////////////////////////////////////////////////////////
+
 module dig_clk(input logic clk, enb, rst, enb_hr, enb_min,
  output logic [6:0] h1, h0, m1, m0, s1, s0, am_pm); 
  

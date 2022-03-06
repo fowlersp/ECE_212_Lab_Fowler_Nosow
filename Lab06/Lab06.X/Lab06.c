@@ -9,7 +9,8 @@
 
 #include "ece212.h"
 
-/*
+/* main function
+ * This function controls and runs all parts of the program.
  * 
  */
 int main(int argc, char** argv) {

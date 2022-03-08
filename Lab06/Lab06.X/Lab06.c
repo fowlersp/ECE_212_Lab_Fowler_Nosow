@@ -9,7 +9,8 @@
 
 #include "ece212.h"
 
-/*
+/* main function
+ * This function controls and runs all parts of the program.
  * 
  */
 int main(int argc, char** argv) {
@@ -26,6 +27,9 @@ int main(int argc, char** argv) {
         senseL = analogRead(LEFT_SENSOR);
         //straightaways
         if(senseR < 0x175 && senseL < 0x175){
+            //This was used to test if the car is on a straightaway 
+            //for a long period of time but is redundant now since
+            //the straight speed for the car is maxed.
             if(cnt > 5000){
                 writeLEDs(0xF);
                 RBACK = 0;

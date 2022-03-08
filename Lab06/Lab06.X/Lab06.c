@@ -48,14 +48,14 @@ int main(int argc, char** argv) {
             RBACK = 0;
             RFORWARD = 0xFFFF;
             LBACK = 0;
-            LFORWARD = 0x6700;
+            LFORWARD = 0x6500;
             cnt = 0;
         }
         //turn right
         else if(senseL < 0x175){
             writeLEDs(0x8);
             RBACK = 0;
-            RFORWARD = 0x6700;
+            RFORWARD = 0x6500;
             LBACK = 0;
             LFORWARD = 0xFFFF;
             cnt = 0;

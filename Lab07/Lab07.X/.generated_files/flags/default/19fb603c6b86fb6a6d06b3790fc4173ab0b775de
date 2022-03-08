@@ -1,0 +1,1 @@
+$(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION) -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab07\Lab07.X\Lab7_Part2.s

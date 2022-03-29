@@ -12,8 +12,8 @@ addi $0, $0, 0 # branch delay slot
 addi $a0, $0, 2 # n = 2
 jal fibr # call fib(2)
 addi $0, $0, 0 # branch delay slot
-done: j done # infinite loop
-add $0, $0, $0 # branch delay slot
+# done: j done  infinite loop
+# add $0, $0, $0  branch delay slot
 
 #fibr(n) function
 fibr:   addi $sp, $sp, -12 # move stack pointer to make space

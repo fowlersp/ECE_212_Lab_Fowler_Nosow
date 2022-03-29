@@ -17,7 +17,7 @@
 module datapath(
     input  logic        clk, reset,
     input logic         memtoreg, pcsrc, alusrc,
-    input logic         regdst, regwrite, jump,
+    input logic         regdst, regwrite, jump, ORI,
     input logic [2:0]   alucontrol,
     output logic        zero,
     output logic [31:0] pc,
@@ -45,10 +45,14 @@ module datapath(
 
     logic [4:0]                      writereg;
     logic [31:0]                     pcnext, pcnextbr, pcplus4, pcbranch;
-    logic [31:0]                     signimm, signimmsh;
+    logic [31:0]                     signimm, signimmsh, unsignimm, fimm;
     logic [31:0]                     srca, srcb;
     logic [31:0]                     result;
     logic [31:0]                     pcjump;
+    
+    // ORI sign extension
+    
+    assign unsignimm = {16'd0, immed};
 
     // next PC logic
 
@@ -58,7 +62,7 @@ module datapath(
 
     adder       U_PCADD1(.a(pc), .b(32'h4), .y(pcplus4));
 
-    sl2         U_IMMSH(.a(signimm), .y(signimmsh));
+    sl2         U_IMMSH(.a(fimm), .y(signimmsh));
 
     adder       U_PCADD2(.a(pcplus4), .b(signimmsh), .y(pcbranch));
 
@@ -69,6 +73,8 @@ module datapath(
     mux2 #(5)   U_WRMUX(.d0(rt), .d1(rd), .s(regdst), .y(writereg));
 
     mux2 #(32)  U_RESMUX(.d0(aluout), .d1(readdata),.s(memtoreg), .y(result));
+    
+    mux2 #(32)  U_ORIMUX(.d0(signimm), .d1(unsignimm), .s(ORI), .y(fimm)); //new ori mux
 
     regfile     U_RF(.clk(clk), .we3(regwrite), .ra1(rs), .ra2(rt),
                      .wa3(writereg), .wd3(result), .rd1(srca), .rd2(writedata));
@@ -76,7 +82,7 @@ module datapath(
     signext     U_SE(.a(immed), .y(signimm));
 
     // ALU logic
-    mux2 #(32)  U_SRCBMUX(.d0(writedata), .d1(signimm), .s(alusrc), .y(srcb));
+    mux2 #(32)  U_SRCBMUX(.d0(writedata), .d1(fimm), .s(alusrc), .y(srcb));
 
     alu         U_ALU(.a(srca), .b(srcb), .f(alucontrol),
                       .y(aluout), .zero(zero));

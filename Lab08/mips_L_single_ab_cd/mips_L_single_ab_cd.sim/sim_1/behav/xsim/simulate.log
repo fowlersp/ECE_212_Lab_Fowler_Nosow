@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Simulation failed - expected to write m[84]=7, actual value 4294934274
+$stop called at time : 120 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv" Line 48
+Simulation failed - expected to write m[84]=7, actual value 4294934274
+$stop called at time : 120 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv" Line 48
+Simulation failed - expected to write m[84]=7, actual value 4294934274
+$stop called at time : 120 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv" Line 48

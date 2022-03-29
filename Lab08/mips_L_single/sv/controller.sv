@@ -21,17 +21,20 @@ module controller(
     output logic       pcsrc, alusrc,
     output logic       regdst, regwrite,
     output logic       jump,
-    output logic [2:0] alucontrol
+    output logic [2:0] alucontrol,
+    output logic       BNE, ORI
     );
 
     logic [1:0] aluop;
-    logic       branch, branchne;
+    logic       branch, branchne, zeros;
 
     maindec U_MD(.opcode, .memtoreg, .memwrite, .branch, .branchne,
-    .alusrc, .regdst, .regwrite, .jump, .aluop);
+    .alusrc, .regdst, .regwrite, .jump, .aluop, .BNE, .ORI);
 
     aludec  U_AD(.funct, .aluop, .alucontrol);
 
-    assign pcsrc = branch & zero;
+    mux2 #(1) U_BNEMUX(.d0(zero), .d1(~zero), .s(BNE), .y(zeros));
+    
+    assign pcsrc = branch & zeros;
 
 endmodule

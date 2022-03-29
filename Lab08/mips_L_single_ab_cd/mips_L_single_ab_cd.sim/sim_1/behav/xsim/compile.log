@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips_decls_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/aludec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/dmem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/imem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/maindec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/signext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/sl2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

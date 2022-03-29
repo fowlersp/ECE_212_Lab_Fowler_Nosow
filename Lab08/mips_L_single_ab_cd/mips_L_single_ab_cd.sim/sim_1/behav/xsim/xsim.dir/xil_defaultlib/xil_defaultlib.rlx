@@ -1,0 +1,22 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/adder.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/alu.sv,,adder,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/alu.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips_decls_p.sv,,alu,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/aludec.sv,1648561368,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/controller.sv,,aludec,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/controller.sv,1648561360,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/datapath.sv,,controller,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/datapath.sv,1648562459,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/dmem.sv,,datapath,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/dmem.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/flopr.sv,,dmem,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/flopr.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/imem.sv,,flopr,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/imem.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/maindec.sv,,imem,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/maindec.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips.sv,,maindec,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mux2.sv,,mips,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips_decls_p.sv,1648555029,systemVerilog,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/aludec.sv;C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/controller.sv;C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/maindec.sv;C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mips.sv,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/aludec.sv,,mips_decls_p,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/mux2.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/regfile.sv,,mux2,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/regfile.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/signext.sv,,regfile,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/signext.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/sl2.sv,,signext,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/sl2.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/top.sv,,sl2,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv,1648555029,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/top.sv,1648555029,systemVerilog,,C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single/sv/testbench.sv,,top,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab08/mips_L_single_ab_cd/mips_L_single_ab_cd.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,

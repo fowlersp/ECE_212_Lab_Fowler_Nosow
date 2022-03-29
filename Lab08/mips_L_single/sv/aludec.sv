@@ -31,6 +31,7 @@ module aludec(
                 default: alucontrol = 3'bxxx; // unimplemented/unknown
             endcase // case (funct)
         end
+        2'b11: alucontrol = 3'b001;  //for ORI
         default: alucontrol = 3'bxxx;
     endcase
 endmodule

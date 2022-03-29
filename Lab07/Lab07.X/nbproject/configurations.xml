@@ -14,6 +14,7 @@
                    projectFiles="true">
       <itemPath>Lab7_Part1.s</itemPath>
       <itemPath>Lab7_Part2.s</itemPath>
+      <itemPath>test2.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -21,6 +22,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Lab08/mips_L_single/src</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -201,6 +205,20 @@
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <item path="Lab7_Part1.s" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>
@@ -680,7 +698,7 @@
         <property key="oscillator.rcfrequency" value="250"/>
         <property key="oscillator.rcfrequencyunit" value="Kilo"/>
         <property key="periphADC1.altscl" value="false"/>
-        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.minTacq" value="132"/>
         <property key="periphADC1.tacqunits" value="microseconds"/>
         <property key="periphADC2.altscl" value="false"/>
         <property key="periphADC2.minTacq" value=""/>
@@ -1136,6 +1154,8 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Tool>
+      <item path="test2.s" ex="true" overriding="false">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

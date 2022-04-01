@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with EazyDraw for Mac ( http://www.eazydraw.com/ ) -->
+
+<svg
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="874.55"
+    height="619.929688"
+    viewBox="0, 0, 874.55, 619.929688"
+    preserveAspectRatio="none"
+    id="svg2">
+   <defs
+       id="defs_AD6CAB5F">
+      <marker
+          orient="auto"
+          refX="0.0"
+          refY="0.0"
+          id="864B0CE7_end_arrow"
+          style="overflow:visible"
+          markerUnits="userSpaceOnUse">
+         <path
+             id="864B0CE7_end_arrow_path"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.75;stroke-miterlimit:10"
+             d="M0,0 L-9.063077870366,4.226182617407 L-9.063077870366,-4.226182617407 z"/>
+      </marker>
+      <marker
+          orient="auto"
+          refX="0.0"
+          refY="0.0"
+          id="885717C4_end_arrow"
+          style="overflow:visible"
+          markerUnits="userSpaceOnUse">
+         <path
+             id="885717C4_end_arrow_path"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.25;stroke-miterlimit:10"
+             d="M0,0 L-10.1486803045,3.693817547917 L-10.1486803045,-3.693817547917 z"/>
+      </marker>
+   </defs>
+   <metadata
+       id="metadata7">
+      <rdf:RDF>
+         <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+            <dc:title></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g
+       id="layer_Paper"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1;stroke-miterlimit:10">
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="244B0CE7"
+          cx="317.16"
+          cy="141.75"
+          rx="65.16"
+          ry="65.25"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="644B0CE7"
+          cx="644.58"
+          cy="302.58"
+          rx="46.08"
+          ry="46.08"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="554B0CE7"
+          cx="504"
+          cy="301.5"
+          rx="46.08"
+          ry="46.08"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="954B0CE7"
+          cx="364.5"
+          cy="301.5"
+          rx="46.08"
+          ry="46.08"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="B54B0CE7"
+          cx="94.5"
+          cy="302.464844"
+          rx="49.5"
+          ry="45.964844"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="E54B0CE7"
+          cx="94.5"
+          cy="445.5"
+          rx="45.9"
+          ry="45.9"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="064B0CE7"
+          cx="94.5"
+          cy="572.464844"
+          rx="49.5"
+          ry="45.964844"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="364B0CE7"
+          cx="229.5"
+          cy="445.5"
+          rx="44.19"
+          ry="45.9"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="564B0CE7"
+          cx="364.5"
+          cy="445.5"
+          rx="46.08"
+          ry="46.08"/>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="6F586CA4"
+          cx="643.5"
+          cy="445.5"
+          rx="46.08"
+          ry="46.08"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="864B0CE7"
+          x1="387"
+          y1="139.5"
+          x2="490.5"
+          y2="139.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="DC6B0CE7"
+          x1="576"
+          y1="175.5"
+          x2="625.5"
+          y2="252"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="8AE139B4"
+          x1="589.5"
+          y1="153"
+          x2="756"
+          y2="261"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="3D6B0CE7"
+          x1="549.000004"
+          y1="184.5"
+          x2="513"
+          y2="252.947922"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="8D6B0CE7"
+          x1="562.975067"
+          y1="166.5"
+          x2="387"
+          y2="254.487534"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="DD6B0CE7"
+          x1="364.5"
+          y1="351"
+          x2="364.5"
+          y2="396"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="1E6B0CE7"
+          x1="508.746941"
+          y1="162"
+          x2="148.5"
+          y2="286.5298"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="6E6B0CE7"
+          x1="94.5"
+          y1="351"
+          x2="94.5"
+          y2="396"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="BE6B0CE7"
+          x1="94.5"
+          y1="495"
+          x2="94.5"
+          y2="522"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="5F6B0CE7"
+          x1="130.5"
+          y1="337.5"
+          x2="202.5"
+          y2="400.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="9F6B0CE7"
+          x1="229.5"
+          y1="495"
+          x2="229.5"
+          y2="571.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="EF6B0CE7"
+          x1="364.5"
+          y1="495"
+          x2="364.5"
+          y2="571.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="47C882A4"
+          x1="504"
+          y1="351"
+          x2="504"
+          y2="571.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="AC7D46B4"
+          x1="783"
+          y1="351"
+          x2="783"
+          y2="571.5"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="207B0CE7"
+          x1="148.5"
+          y1="576"
+          x2="175.5"
+          y2="576"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3"
+          id="707B0CE7"
+          x1="166.5"
+          y1="576"
+          x2="873"
+          y2="576"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3"
+          id="A07B0CE7"
+          x1="873"
+          y1="576"
+          x2="873"
+          y2="45"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="E07B0CE7"
+          x1="315"
+          y1="45"
+          x2="315"
+          y2="72"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3"
+          id="217B0CE7"
+          x1="315"
+          y1="45"
+          x2="873"
+          y2="45"/>
+      <text
+          id="92FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="234.5" y="83">FETCH </tspan>
+         <tspan x="234.5" y="97">/ S0</tspan>
+      </text>
+      <text
+          id="D2FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="464" y="101">DECODE </tspan>
+         <tspan x="464" y="115">/  S1</tspan>
+      </text>
+      <text
+          id="E2FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="5" y="263">MEMADR</tspan>
+         <tspan x="5" y="277">&#x20;/ S2</tspan>
+      </text>
+      <text
+          id="03FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="18.5" y="407">MEMRD </tspan>
+         <tspan x="18.5" y="421">/ S3</tspan>
+      </text>
+      <text
+          id="13FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="18.5" y="528.5">MEMWB /</tspan>
+         <tspan x="18.5" y="542.5">S4</tspan>
+      </text>
+      <text
+          id="33FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="149" y="411.5">MEMWR</tspan>
+         <tspan x="149" y="425.5">/ S5</tspan>
+      </text>
+      <text
+          id="43FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="297.5" y="398">RTYPEWB</tspan>
+         <tspan x="297.5" y="412">/ S7</tspan>
+      </text>
+      <text
+          id="53FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="275" y="263">RTYPEEX</tspan>
+         <tspan x="275" y="277">/ S6</tspan>
+      </text>
+      <text
+          id="63FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="428" y="263">BEQEX</tspan>
+         <tspan x="428" y="277">&#x20;/ S8</tspan>
+      </text>
+      <text
+          id="73FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="567.5" y="263">ADDIEX</tspan>
+         <tspan x="567.5" y="277">&#x20;/ S9</tspan>
+      </text>
+      <text
+          id="E2A2C3B4"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="707" y="263">JEX</tspan>
+         <tspan x="707" y="277">&#x20;/&#x20;</tspan>
+      </text>
+      <text
+          id="F3FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="normal"
+          font-style="normal">
+         <tspan x="104.92578125" y="519.5">Writeback step</tspan>
+      </text>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="CD8B0CE7"
+          cx="544.5"
+          cy="139.5"
+          rx="46.08"
+          ry="46.08"/>
+      <text
+          id="14FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="296.520996094" y="100">IorD = 0</tspan>
+         <tspan x="284.755859375" y="112">ALUSrcA = 0</tspan>
+         <tspan x="281.791992188" y="124">ALUSrcB = 01</tspan>
+         <tspan x="286.520996094" y="136">ALUOp = 00</tspan>
+         <tspan x="279.84375" y="148">PCSource = 00</tspan>
+         <tspan x="297.67578125" y="160">IRWrite</tspan>
+         <tspan x="295.642089844" y="172">PCWrite</tspan>
+      </text>
+      <text
+          id="24FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal"
+          transform="matrix(0.950277244593,-0.311405135488,0.311405135488,0.950277244593,-61.2426842516,90.572909792)">
+         <tspan x="198.923828125" y="240.5">Op = </tspan>
+         <tspan font-family="Courier New">LW</tspan>
+         <tspan>&#x20;or Op =&#x20;</tspan>
+         <tspan font-family="Courier New">SW</tspan>
+      </text>
+      <text
+          id="34FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal"
+          transform="matrix(0.898794177082,-0.438370878644,0.438370878644,0.898794177082,-48.9471151074,216.986607508)">
+         <tspan x="410.168944688" y="218">OP = R-Type</tspan>
+      </text>
+      <text
+          id="44FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal"
+          transform="matrix(0.473033762262,-0.88104430068,0.88104430068,0.473033762262,85.111554574,571.29953403)">
+         <tspan x="493.935619081" y="218">OP = </tspan>
+         <tspan font-family="Courier New">BEQ</tspan>
+      </text>
+      <text
+          id="54FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal"
+          transform="matrix(0.560947788819,0.820748305112,-0.82559632226,0.564261209611,436.876943626,-410.268899502)">
+         <tspan x="579.20216511" y="209">OP = </tspan>
+         <tspan font-family="Courier New">ADDI</tspan>
+      </text>
+      <text
+          id="665DB9B4"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal"
+          transform="matrix(0.83267031055,0.54309332168,-0.546301279248,0.837588748905,206.010406738,-323.741712608)">
+         <tspan x="630.503922923" y="182">OP = </tspan>
+         <tspan font-family="Courier New">J</tspan>
+      </text>
+      <text
+          id="64FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="514.755859375" y="127">ALUSrcA = 0</tspan>
+         <tspan x="512.065429688" y="139">ALUSrcB = 11</tspan>
+         <tspan x="516.520996094" y="152">ALUOp = 00</tspan>
+      </text>
+      <text
+          id="84FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="58.505859375" y="293.5">ALUSrcA = 1</tspan>
+         <tspan x="55.5419921875" y="305.5">ALUSrcB = 10</tspan>
+         <tspan x="60.2709960938" y="317.5">ALUOp = 00</tspan>
+      </text>
+      <text
+          id="94FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="38.9462890625" y="366.5">(OP = LW’)</tspan>
+      </text>
+      <text
+          id="A4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="162.5" y="353">(OP = ‘SW’)</tspan>
+      </text>
+      <text
+          id="B4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="72.5209960938" y="443">IorD = 1</tspan>
+      </text>
+      <text
+          id="C4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="65.0185546875" y="563.5">RegDst = 0</tspan>
+         <tspan x="58.7221679688" y="575.5">MemToReg=1</tspan>
+         <tspan x="69.1420898438" y="587.5">RegWrite</tspan>
+      </text>
+      <text
+          id="D4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="212.020996094" y="442">IorD = 1</tspan>
+         <tspan x="206.696289062" y="454">MemWrite</tspan>
+      </text>
+      <text
+          id="E4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="335.255859375" y="289">ALUSrcA = 1</tspan>
+         <tspan x="332.291992188" y="301">ALUSrcB = 00</tspan>
+         <tspan x="337.020996094" y="314">ALUOp = 10</tspan>
+      </text>
+      <text
+          id="F4FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="335.018554688" y="433">RegDst = 1</tspan>
+         <tspan x="326.964355469" y="446">MemtoReg = 0</tspan>
+         <tspan font-size="12" font-weight="normal"> </tspan>
+         <tspan x="339.142089844" y="459">RegWrite</tspan>
+      </text>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="4C8FABA4"
+          x1="643.5"
+          y1="351"
+          x2="643.5"
+          y2="396"/>
+      <line
+          style="fill:#FFFFFF;stroke-width:3;marker-end:url(#864B0CE7_end_arrow)"
+          id="5C8FABA4"
+          x1="643.5"
+          y1="495"
+          x2="643.5"
+          y2="571.5"/>
+      <text
+          id="6C8FABA4"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="572" y="398">ADDIWB</tspan>
+         <tspan x="572" y="412">/ S10</tspan>
+      </text>
+      <text
+          id="7C8FABA4"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="614.018554688" y="433">RegDst = 0</tspan>
+         <tspan x="605.964355469" y="445">MemtoReg = 0</tspan>
+         <tspan x="618.142089844" y="458">RegWrite</tspan>
+      </text>
+      <text
+          id="05FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="473.755859375" y="280">ALUSrcA = 1</tspan>
+         <tspan x="470.791992188" y="292">ALUSrcB = 00</tspan>
+         <tspan x="475.520996094" y="304">ALUOp = 01</tspan>
+         <tspan x="468.84375" y="317">PCSource = 01</tspan>
+         <tspan font-size="12" font-weight="normal"> </tspan>
+         <tspan x="486.7734375" y="330">Branch</tspan>
+      </text>
+      <text
+          id="15FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="613.255859375" y="289">ALUSrcA = 1</tspan>
+         <tspan x="610.291992188" y="301">ALUSrcB = 10</tspan>
+         <tspan x="617.799316406" y="313">ALUOp=00</tspan>
+      </text>
+      <ellipse
+          style="fill:#FFFFFF;stroke-width:3"
+          id="7DEAB494"
+          cx="783"
+          cy="301.5"
+          rx="46.08"
+          ry="46.08"/>
+      <text
+          id="ADEAB494"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="10"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="747.84375" y="299">PCSource = 10</tspan>
+         <tspan font-size="12" font-weight="normal"> </tspan>
+         <tspan x="763.642089844" y="312">PCWrite</tspan>
+      </text>
+      <text
+          id="25FB0CE7"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="18"
+          font-weight="bold"
+          font-style="normal">
+         <tspan x="256.227050781" y="18">ECE 212 - MIPS Multicycle Control-Unit </tspan>
+      </text>
+      <path
+          style="fill:none;marker-end:url(#885717C4_end_arrow)"
+          id="885717C4"
+          d="M216.029627644,126 C216.029627644,126 216.029627644,126 216.029627644,126 C215.412033442,141.552637981 224.402546671,139.6817875 247.443412058,139.5"/>
+      <text
+          id="7D573CC4"
+          style="stroke:none"
+          font-family="Helvetica"
+          font-size="12"
+          font-weight="normal"
+          font-style="normal">
+         <tspan x="203" y="123.5">reset</tspan>
+      </text>
+      <line
+          style="fill:none"
+          id="8BF552D4"
+          x1="211.5"
+          y1="126"
+          x2="220.5"
+          y2="126"/>
+   </g>
+</svg>

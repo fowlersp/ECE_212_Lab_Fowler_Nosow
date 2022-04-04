@@ -156,10 +156,15 @@ module maindec(
               aluscrb = 2'b10;
               aluop = 2'b00;
           end
-        ADDIWB: next = FETCH;
-        JEX: next = FETCH;
-        ERROR:   next = ERROR;  
-        
+          ADDIWB: begin
+              regdst = 0;
+              memtoreg = 0;
+              regwrite = 1;
+          end
+          JEX: begin
+              pcsrc = 2'b10;
+              pcwrite = 1;
+          end
           // add code here to specify outputs for remaining states
           // note you only need to add values specified in each state bubble
           // because default values are set before the case statement

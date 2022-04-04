@@ -64,19 +64,25 @@ module maindec(
               endcase
           end
       // Add code here
-      MEMADR:
-      MEMRD:
-      MEMWB:
-      MEMWR:
-      RTYPEEX:
-      RTYPEWB:
-      BEQEX:
-      ADDIEX:
-      ADDIWB:
-      JEX:
-      ERROR:   next = ERROR;  // stay in ERROR state until reset
-      default: next = ERROR;  // should never happen but go to ERROR if it does
-  endcase
+        MEMADR: begin
+            case(opcode)
+                OP_LW:       next = MEMRD;
+                OP_SW:       next = MEMWR;
+                default:     next = ERROR;
+            endcase
+        end 
+        MEMRD: next = MEMWB;
+        MEMWB: next = FETCH;
+        MEMWR: next = FETCH;
+        RTYPEEX: next = RTYPEWB;
+        RTYPEWB: next = FETCH;
+        BEQEX: next = FETCH;
+        ADDIEX: next = ADDIWB;
+        ADDIWB: next = FETCH;
+        JEX: next = FETCH;
+        ERROR:   next = ERROR;  // stay in ERROR state until reset
+        default: next = ERROR;  // should never happen but go to ERROR if it does
+    endcase
 
   // output logic
 
@@ -112,7 +118,48 @@ module maindec(
               alusrcb = 2'b11;
               aluop = 2'b00;
           end
-
+          
+          MEMADR: begin
+              aluscra = 1;
+              aluscrb = 2'b10;
+              aluop = 2'b00;
+          end 
+          MEMRD: iord = 1;
+          MEMWB: begin
+              regdst = 0;
+              memtoreg = 1;
+              regwrite = 1;
+          end
+          MEMWR: begin
+              iord = 1;
+              memwrite = 1;
+          end
+          RTYPEEX: begin
+              aluscra = 1;
+              aluscrb = 2'b00;
+              aluop = 2'b10;
+          end
+          RTYPEWB: begin
+              regdst = 1;
+              memtoreg = 0;
+              regwrite = 1;
+          end
+          BEQEX: begin
+              aluscra = 1;
+              aluscrb = 2'b00;
+              aluop = 2'b01;
+              pcsrc = 2'b01;
+              branch = 1;
+          end
+          ADDIEX: begin
+              aluscra = 1;
+              aluscrb = 2'b10;
+              aluop = 2'b00;
+          end
+        ADDIWB: next = FETCH;
+        JEX: next = FETCH;
+        ERROR:   next = ERROR;  
+        
           // add code here to specify outputs for remaining states
           // note you only need to add values specified in each state bubble
           // because default values are set before the case statement

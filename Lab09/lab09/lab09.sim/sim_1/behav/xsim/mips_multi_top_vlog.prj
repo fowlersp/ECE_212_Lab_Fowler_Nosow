@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_decls_p.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/aludec.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/controller.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/datapath.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/maindec.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mem.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_multi.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_multi_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

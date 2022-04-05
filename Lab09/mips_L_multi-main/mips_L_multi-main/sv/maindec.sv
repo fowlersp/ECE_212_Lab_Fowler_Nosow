@@ -83,7 +83,7 @@ module maindec(
         ERROR:   next = ERROR;  // stay in ERROR state until reset
         default: next = ERROR;  // should never happen but go to ERROR if it does
     endcase
-
+ end
   // output logic
 
   // ADD CODE HERE
@@ -120,8 +120,8 @@ module maindec(
           end
           
           MEMADR: begin
-              aluscra = 1;
-              aluscrb = 2'b10;
+              alusrca = 1;
+              alusrcb = 2'b10;
               aluop = 2'b00;
           end 
           MEMRD: iord = 1;
@@ -135,8 +135,8 @@ module maindec(
               memwrite = 1;
           end
           RTYPEEX: begin
-              aluscra = 1;
-              aluscrb = 2'b00;
+              alusrca = 1;
+              alusrcb = 2'b00;
               aluop = 2'b10;
           end
           RTYPEWB: begin
@@ -145,15 +145,15 @@ module maindec(
               regwrite = 1;
           end
           BEQEX: begin
-              aluscra = 1;
-              aluscrb = 2'b00;
+              alusrca = 1;
+              alusrcb = 2'b00;
               aluop = 2'b01;
               pcsrc = 2'b01;
               branch = 1;
           end
           ADDIEX: begin
-              aluscra = 1;
-              aluscrb = 2'b10;
+              alusrca = 1;
+              alusrcb = 2'b10;
               aluop = 2'b00;
           end
           ADDIWB: begin

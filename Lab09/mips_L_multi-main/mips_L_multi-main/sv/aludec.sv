@@ -29,7 +29,6 @@ module aludec(
            end
            default: alucontrol = 3'bxxx;
        endcase
-endmodule
   // ADD CODE HERE
   // Complete the design for the ALU Decoder.
   // Your design goes here.  Remember that this is a combinational

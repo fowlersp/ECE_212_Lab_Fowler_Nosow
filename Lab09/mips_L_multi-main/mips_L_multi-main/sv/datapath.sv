@@ -34,10 +34,11 @@ module datapath(
    import mips_decls_p::*;
 
    // instruction fields
-   logic [31:0]                     instr;
+   logic [31:0]                     instr, pcnext, pcadr, aluout, adr2;
    logic [4:0]                      rs, rt, rd;  // register fields
    logic [15:0]                     immed;       // i-type immediate field
    logic [25:0]                     jmpimmed;    // j-type pseudo-address
+   
 
   // extract instruction fields from instruction
    assign opcode = opcode_t'(instr[31:26]);
@@ -49,6 +50,9 @@ module datapath(
    assign jmpimmed = instr[25:0];
 
 
+    flopenr PC(.clk, .reset, .en(pcen), .d(pcnext), .q(pcadr));
+    mux2 #(32) ADR(.d0(padr), .d1(aluout), .s(iord), .y(adr2));
+    
    // Your datapath hardware goes below.  Instantiate each of the submodules
    // that you need.  Feel free to copy ALU, muxes and other modules from
    // Lab 9.  This directory also includes parameterizable multipliexers

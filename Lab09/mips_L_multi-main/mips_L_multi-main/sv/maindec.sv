@@ -118,7 +118,7 @@ module maindec(
               alusrcb = 2'b11;
               aluop = 2'b00;
           end
-          
+          //new fsm states
           MEMADR: begin
               alusrca = 1;
               alusrcb = 2'b10;

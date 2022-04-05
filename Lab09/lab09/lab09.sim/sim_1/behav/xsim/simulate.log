@@ -1,3 +1,5 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-$stop called at time : 235 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller_tb.sv" Line 67
+$stop called at time : 275 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller_tb.sv" Line 67
+$stop called at time : 275 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller_tb.sv" Line 67
+$stop called at time : 275 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller_tb.sv" Line 67

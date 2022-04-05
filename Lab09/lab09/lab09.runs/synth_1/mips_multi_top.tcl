@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,15 +86,23 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/alu.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_decls_p.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/aludec.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/datapath.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/flopenr.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/flopr.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mem.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_multi.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mux2.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mux3.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mux4.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/regfile.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/signext.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/sl2.sv
+  C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/sl2e.sv
   C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_multi_top.sv
 }
 OPTRACE "Adding files" END { }

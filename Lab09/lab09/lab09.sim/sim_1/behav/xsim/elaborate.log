@@ -14,6 +14,8 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.mips_decls_p
 Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav

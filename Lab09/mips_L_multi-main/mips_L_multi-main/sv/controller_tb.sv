@@ -26,21 +26,16 @@ module controller_tb;
 
     logic clk, reset;
     mips_decls_p::opcode_t opcode;
-    logic       pcwrite, memwrite, irwrite, regwrite;
-    logic       alusrca, branch, iord, memtoreg, regdst;
+    mips_decls_p::funct_t funct;
+    logic       zero, pcen, memwrite, irwrite, regwrite;
+    logic       alusrca, iord, memtoreg, regdst;
     logic [1:0] alusrcb, pcsrc;
-    logic [1:0] aluop;
+    logic [2:0] alucontrol;
     
-    maindec DUV(.clk, .reset,
- 
-    .opcode,
- .pcwrite, .memwrite, 
-    .irwrite, .regwrite,
- .alusrca, 
-    .branch, .iord, .memtoreg, 
-    .regdst,
- .alusrcb, .pcsrc,
- .aluop);
+    controller DUV(.clk, .reset, .opcode, .funct,
+    .zero, .pcen, .memwrite, .irwrite, .regwrite,
+    .alusrca, .iord, .memtoreg, 
+    .regdst, .alusrcb, .pcsrc, .alucontrol);
     
     always begin
         clk = 0; #5;
@@ -50,15 +45,20 @@ module controller_tb;
     initial
         begin
             reset = 1;
+            zero = 0;
             @(negedge clk) #1;
             reset = 0;
             opcode = OP_LW;
-            repeat(4)@(negedge clk) #5;
+            repeat(5)@(negedge clk) #5;
             opcode = OP_SW;
             repeat(4)@(negedge clk) #5;
             opcode = OP_RTYPE;
             repeat(4)@(negedge clk) #5;
             opcode = OP_BEQ;
+            zero = 1;
+            repeat(3)@(negedge clk) #5;
+            opcode = OP_BEQ;
+            zero = 0;
             repeat(3)@(negedge clk) #5;
             opcode = OP_ADDI;
             repeat(4)@(negedge clk) #5;

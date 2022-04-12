@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 12 07:51:10 2022
+# Process ID: 5768
+# Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6948 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab09\lab09\lab09.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09/lab09.xpr
+update_compile_order -fileset sources_1
+
+launch_simulation
+source testbench.tcl
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/opcode}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/funct}} 
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/pcadr}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/instr}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_CTL/U_MAINDEC/state}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/scra}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/scrb}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/aluresult}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/zero}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/pcen}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_CTL/pcwrite}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_CTL/U_MAINDEC/irwrite}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_CTL/U_MAINDEC/branch}} 
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/scra}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/DUV/U_MIPS/U_DP/scrb}} 
+close_sim

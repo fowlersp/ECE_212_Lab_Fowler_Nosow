@@ -5,30 +5,4 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09/lab09.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09/lab09.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.mips_decls_p
-Compiling module xil_defaultlib.maindec
-Compiling module xil_defaultlib.aludec
-Compiling module xil_defaultlib.controller
-Compiling module xil_defaultlib.flopenr(WIDTH=32)
-Compiling module xil_defaultlib.mux2(WIDTH=32)
-Compiling module xil_defaultlib.flopr(WIDTH=32)
-Compiling module xil_defaultlib.mux2(WIDTH=5)
-Compiling module xil_defaultlib.regfile
-Compiling module xil_defaultlib.signext
-Compiling module xil_defaultlib.sl2
-Compiling module xil_defaultlib.mux4
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.sl2e(WIDTH=26)
-Compiling module xil_defaultlib.mux3
-Compiling module xil_defaultlib.datapath
-Compiling module xil_defaultlib.mips_multi
-Compiling module xil_defaultlib.mem
-Compiling module xil_defaultlib.mips_multi_top
-Compiling module xil_defaultlib.testbench
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot testbench_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

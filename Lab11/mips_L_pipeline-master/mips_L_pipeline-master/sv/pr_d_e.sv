@@ -1,16 +1,16 @@
 module pr_d_e(input logic clk, reset, flush_e,
-  input logic regwrite_d, memtoreg_d, memwrite_d,
+  input logic regwrite_d, memtoreg_d, memwrite_d, jal_d,
   input logic [2:0] alucontrol_d,
   input logic alusrc_d, regdst_d,
   input logic [31:0] rd1_d, rd2_d,
   input logic [4:0] rs_d, rt_d, rd_d,
-  input logic [31:0] signimm_d,
-  output logic regwrite_e, memtoreg_e, memwrite_e,
+  input logic [31:0] signimm_d, pc_d,
+  output logic regwrite_e, memtoreg_e, memwrite_e, jal_e,
   output logic [2:0] alucontrol_e,
   output logic alusrc_e, regdst_e,
   output logic [31:0] rd1_e, rd2_e,
   output logic [4:0] rs_e, rt_e, rd_e,
-  output logic [31:0] signimm_e
+  output logic [31:0] signimm_e, pc_e
   );
 
   always_ff @ (posedge clk)
@@ -27,6 +27,8 @@ module pr_d_e(input logic clk, reset, flush_e,
     rt_e <= '0;
     rd_e <= '0;
     signimm_e <= '0;
+    pc_e <= '0;
+    jal_e <= '0;
   end
   else begin
     regwrite_e <= regwrite_d;
@@ -41,5 +43,7 @@ module pr_d_e(input logic clk, reset, flush_e,
     rt_e <= rt_d;
     rd_e <= rd_d;
     signimm_e <= signimm_d;
+    pc_e <= pc_d;
+    jal_e <= jal_d;
   end
 endmodule: pr_d_e

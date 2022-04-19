@@ -28,7 +28,8 @@ package mips_decls_p;
                              F_OR  = 6'd37,
                              F_XOR = 6'd38,
                              F_NOR = 6'd39,
-                             F_SLT = 6'd42
+                             F_SLT = 6'd42,
+			     F_JR = 6'd8
                              } funct_t;
 
 endpackage

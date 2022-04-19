@@ -36,16 +36,16 @@ module mips(input  logic        clk, reset,
 
    // control signals
 
-   logic                        memtoreg_d, alusrc_d, regdst_d, regwrite_d, jump_d, pcsrc_d;
+   logic                        memtoreg_d, alusrc_d, regdst_d, regwrite_d, jump_d, pcsrc_d, jal_d, jr_d;
    logic [2:0]                  alucontrol_d;
 
    controller U_C(.opcode(opcode_d), .funct(funct_d), .zero(zero_d), .memtoreg(memtoreg_d),
                   .memwrite(memwrite_d), .pcsrc(pcsrc_d),
                   .alusrc(alusrc_d), .regdst(regdst_d), .regwrite(regwrite_d), .jump(jump_d),
-                  .alucontrol(alucontrol_d));
+                  .alucontrol(alucontrol_d), .jal(jal_d), .jr(jr_d));
 
    datapath U_DP(.clk, .reset, .memtoreg_d, .memwrite_d, .pcsrc_d,
-                 .alusrc_d, .regdst_d, .regwrite_d, .jump_d,
+                 .alusrc_d, .regdst_d, .regwrite_d, .jump_d, .jal_d, .jr_d,
                  .alucontrol_d, .zero_d, .pc_f(pc), .instr_f(instr), .instr_d,
                  .memwrite_m, .aluout_m(aluout), .writedata_m(writedata), .readdata_m(readdata));
 endmodule

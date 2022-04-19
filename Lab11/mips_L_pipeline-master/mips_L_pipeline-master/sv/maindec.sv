@@ -13,7 +13,8 @@
 //--------------------------------------------------------------
 
 module maindec (input mips_decls_p::opcode_t opcode,
-		output logic memtoreg, memwrite, branch, alusrc, regdst, regwrite, jump,
+        mips_decls_p::funct_t funct,
+		output logic memtoreg, memwrite, branch, alusrc, regdst, regwrite, jump, jal, jr,
 		output logic [1:0] aluop);
 
    import mips_decls_p::*;
@@ -22,14 +23,32 @@ module maindec (input mips_decls_p::opcode_t opcode,
       begin
 	 case (opcode) 
 	   OP_RTYPE: begin
-	      regwrite = 1'b1;
-	      regdst = 1'b1;
-	      alusrc = 1'b0;
-	      branch = 1'b0;
-	      memwrite = 1'b0;
-	      memtoreg = 1'b0;
-	      jump = 1'b0;
-	      aluop = 2'b10;
+	   if(funct == F_JR)
+	       begin
+              regwrite = 1'b0;
+              regdst = 1'b0;
+              alusrc = 1'b0;
+              branch = 1'b0;
+              memwrite = 1'b0;
+              memtoreg = 1'b0;
+              jump = 1'b1;
+              aluop = 2'b10;
+              jal = 1'b0;
+              jr = 1'b1;
+	       end
+	   else
+	       begin
+              regwrite = 1'b1;
+              regdst = 1'b1;
+              alusrc = 1'b0;
+              branch = 1'b0;
+              memwrite = 1'b0;
+              memtoreg = 1'b0;
+              jump = 1'b0;
+              aluop = 2'b10;
+              jal = 1'b0;
+              jr = 1'b0;
+	       end
 	   end
 	   OP_LW: begin
 	      regwrite = 1'b1;
@@ -40,6 +59,8 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'b1;
 	      jump = 1'b0;
 	      aluop = 2'b00;
+	      jal = 1'b0;
+	      jr = 1'b0;
 	   end
 	   OP_SW: begin
 	      regwrite = 1'b0;
@@ -50,6 +71,8 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'b0;
 	      jump = 1'b0;
 	      aluop = 2'b00;
+	      jal = 1'b0;
+	      jr = 1'b0;
 	   end
 	   OP_BEQ: begin
 	      regwrite = 1'b0;
@@ -60,6 +83,8 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'b0;
 	      jump = 1'b0;
 	      aluop = 2'b01;
+	      jal = 1'b0;
+	      jr = 1'b0;
 	   end
 	   OP_ADDI: begin
 	      regwrite = 1'b1;
@@ -70,6 +95,8 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'b0;
 	      jump = 1'b0;
 	      aluop = 2'b00;
+	      jal = 1'b0;
+	      jr = 1'b0;
 	   end
 	   OP_J: begin
 	      regwrite = 1'b0;
@@ -80,6 +107,20 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'b0;
 	      jump = 1'b1;
 	      aluop = 2'b00;
+	      jal = 1'b0;
+	      jr = 1'b0;
+	   end
+	   OP_JAL: begin
+	      regwrite = 1'b0;
+	      regdst = 1'b0;
+	      alusrc = 1'b0;
+	      branch = 1'b0;
+	      memwrite = 1'b0;
+	      memtoreg = 1'b0;
+	      jump = 1'b1;
+	      aluop = 2'b00;
+	      jal = 1'b1;
+	      jr = 1'b0;
 	   end
 	   default: begin     // unimplemented - use 'x to indicate error
 	      regwrite = 1'bx;
@@ -90,6 +131,8 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      memtoreg = 1'bx;
 	      jump = 1'bx;
 	      aluop = 2'bxx;
+	      jal = 1'bx;
+	      jr = 1'bx;
 	   end
 	 endcase // case (opcode)
       end

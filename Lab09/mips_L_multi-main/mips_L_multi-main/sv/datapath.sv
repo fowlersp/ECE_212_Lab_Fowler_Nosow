@@ -53,16 +53,15 @@ module datapath(
    assign rd = instr[15:11];
    assign immed = instr[15:0];
    assign jmpimmed = instr[25:0];
-   assign pcjump = {pcadr[31:28], shiftjmpimm}; //concat the shifted jump addr with the four largest bits of the current instruction
    assign writedata = B;    //writedata is B register output
 
     //PC Register
     flopenr #(32)   PC_FFEN(.clk, .reset, .en(pcen), .d(pcnext), .q(pcadr));
     
-    mux2 #(32)      IORD_MUX(.d0(padr), .d1(aluout), .s(iord), .y(adr));
+    mux2 #(32)      IORD_MUX(.d0(pcadr), .d1(aluout), .s(iord), .y(adr));
     
     //Instr Register
-    flopenr #(32)   IR_FFEN(.clk, .reset, .en(iwrite), .d(readdata), .q(instr));
+    flopenr #(32)   IR_FFEN(.clk, .reset, .en(irwrite), .d(readdata), .q(instr));
     
     //Memory Address Register
     flopr #(32)     MDR_FF(.clk, .reset, .d(readdata), .q(data));
@@ -77,14 +76,15 @@ module datapath(
     
     flopr #(32)     B_FF(.clk, .reset, .d(rd2), .q(B));
     
-    //ALUsrca mux
+    //ALUsrcA mux
     mux2 #(32)      ALUSA_MUX(.d0(pcadr), .d1(A), .s(alusrca), .y(scra));
     
+    //sign extender
     signext         SE(.a(immed), .y(signimm));
     
     sl2             IMM_SL2(.a(signimm), .y(shiftsignimm));
     
-    //ALUsrcb mux
+    //ALUsrcB mux
     mux4 #(32)      ALUSB_MUX(.d0(B), .d1(32'd4), .d2(signimm), .d3(shiftsignimm), .s(alusrcb), .y(scrb));
     
     alu             ALU(.a(scra), .b(scrb), .f(alucontrol), .y(aluresult), .zero);
@@ -94,6 +94,9 @@ module datapath(
     
     //Shift left for jump address
     sl2e #(26)      INSTR_SL2(.a(jmpimmed), .y(shiftjmpimm));
+    
+    //concat the shifted jump addr with the four largest bits of the current instruction
+    assign pcjump = {pcadr[31:28], shiftjmpimm}; 
     
     //PCsrc Register
     mux3 #(32)      PCSRC_MUX(.d0(aluresult), .d1(aluout), .d2(pcjump), .s(pcsrc), .y(pcnext));

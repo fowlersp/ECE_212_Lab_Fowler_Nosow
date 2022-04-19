@@ -16,15 +16,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12352
+INFO: [Synth 8-7075] Helper process launched with PID 736
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.633 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.172 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mips_multi_top' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_multi_top.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'mips_multi' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_multi.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv:15]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv:106]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv:102]
 INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv:15]
 INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/aludec.sv:8]
 INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/aludec.sv:8]
@@ -68,19 +68,19 @@ INFO: [Synth 8-3876] $readmem data file 'memfile.dat' is read successfully [C:/U
 INFO: [Synth 8-6155] done synthesizing module 'mem' (16#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mem.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'mips_multi_top' (17#1) [C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_multi_top.sv:11]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.633 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.172 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.633 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.172 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.633 ; gain = 0.000
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.172 ; gain = 0.000
+---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'maindec'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -101,7 +101,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'maind
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'maindec'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.633 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.172 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -140,20 +140,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1097.047 ; gain = 7.875
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1097.969 ; gain = 8.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1098.188 ; gain = 9.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -171,37 +171,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -214,36 +214,50 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |OBUF |    65|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |    30|
+|4     |LUT4   |     2|
+|5     |FDRE   |    33|
+|6     |FDSE   |     1|
+|7     |IBUF   |     2|
+|8     |OBUF   |    65|
++------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    65|
-+------+---------+-------+------+
++------+----------------+-----------+------+
+|      |Instance        |Module     |Cells |
++------+----------------+-----------+------+
+|1     |top             |           |   142|
+|2     |  U_MIPS        |mips_multi |    74|
+|3     |    U_CTL       |controller |     7|
+|4     |      U_MAINDEC |maindec    |     7|
+|5     |    U_DP        |datapath   |    67|
+|6     |      PC_FFEN   |flopenr    |    67|
++------+----------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1093.152 ; gain = 4.520
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1100.914 ; gain = 11.742
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1099.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1113.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1201.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1201.551 ; gain = 112.918
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1210.172 ; gain = 121.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/lab09/lab09.runs/synth_1/mips_multi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mips_multi_top_utilization_synth.rpt -pb mips_multi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 09:38:26 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 10 16:58:06 2022...

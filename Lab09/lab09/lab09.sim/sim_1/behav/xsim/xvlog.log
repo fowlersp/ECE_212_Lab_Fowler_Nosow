@@ -1,9 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/mips_decls_p.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/aludec.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module aludec
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module controller
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/maindec.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module maindec
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab09/mips_L_multi-main/mips_L_multi-main/sv/controller_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module controller_tb

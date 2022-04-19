@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/alu.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_decls_p.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/aludec.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/controller.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/datapath.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/flopenr.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/flopr.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/maindec.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mem.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_multi.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mips_multi_top.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mux2.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mux3.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/mux4.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/regfile.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/signext.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/sl2.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/sl2e.sv" \
+"../../../../../mips_L_multi-main/mips_L_multi-main/sv/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

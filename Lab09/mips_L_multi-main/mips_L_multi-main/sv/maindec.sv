@@ -44,10 +44,6 @@ module maindec(
     if(reset) state = FETCH;
     else state = next;
 
-  // ADD CODE HERE
-  // Finish entering the next state logic below.  We've completed the first
-  // two states, FETCH and DECODE, for you.  See Figure 7.42 in the book.
-
   // next state logic
   always_comb begin
       case(state)
@@ -165,11 +161,6 @@ module maindec(
               pcsrc = 2'b10;
               pcwrite = 1;
           end
-          // add code here to specify outputs for remaining states
-          // note you only need to add values specified in each state bubble
-          // because default values are set before the case statement
-
-          // just use default values set before case
 
       endcase // case (state)
   end

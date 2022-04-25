@@ -25,7 +25,7 @@ module imem #(parameter SIZE=64 ) (
 
    initial
      begin
-        $readmemh("memfilejr.dat",RAM); // initialize memory
+        $readmemh("memfilejaljr.dat",RAM); // initialize memory
      end
 
    always_comb

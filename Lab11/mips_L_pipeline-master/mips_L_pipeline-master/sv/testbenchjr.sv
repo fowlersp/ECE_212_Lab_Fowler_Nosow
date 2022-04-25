@@ -51,7 +51,7 @@ module testbenchjr();
                 $display("Simulation succeeded");
                 @(posedge clk);
                 $stop;
-            end else if (dataadr !== 20) begin
+            end else if (dataadr !== 40) begin
                 $display("Simulation failed - expected to write m[84]=7, actual value %d",writedata);
                 @(posedge clk);
                 $stop;

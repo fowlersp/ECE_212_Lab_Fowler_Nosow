@@ -87,7 +87,7 @@ module datapath(input  logic        clk, reset,
 
   mux2 #(32) U_PCBRMUX_F(.d0(pcplus4_f), .d1(pcbranch_d), .s(pcsrc_d), .y(pcnextbr_f));
   
-  mux2 #(32)  U_PCJMUX_F(.d0(pcjump_d), .d1(rd2_d), .s(jr_d), .y(pcjump_sel));
+  mux2 #(32)  U_PCJMUX_F(.d0(pcjump_d), .d1(rd1_d), .s(jr_d), .y(pcjump_sel));  // new mux
 
   mux2 #(32)  U_PCNMUX_F(.d0(pcnextbr_f), .d1(pcjump_sel), .s(jump_d), .y(pcnext_f));
 
@@ -129,7 +129,7 @@ module datapath(input  logic        clk, reset,
   pr_d_e U_PR_D_E(.clk, .reset, .flush_e(1'b0),
                   .regwrite_d, .memtoreg_d, .memwrite_d, .alucontrol_d,
                   .alusrc_d, .regdst_d, .rd1_d, .rd2_d,
-                  .rs_d, .rt_d, .rd_d, .signimm_d, .pc_d, .jal_d,
+                  .rs_d, .rt_d, .rd_d, .signimm_d, .pc_d(pcplus4_d), .jal_d,
                   .regwrite_e, .memtoreg_e, .memwrite_e, .alucontrol_e,
                   .alusrc_e, .regdst_e, .rd1_e, .rd2_e,
                   .rs_e, .rt_e, .rd_e, .signimm_e, .pc_e, .jal_e);

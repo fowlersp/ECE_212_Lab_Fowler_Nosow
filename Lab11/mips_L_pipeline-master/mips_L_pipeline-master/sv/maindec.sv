@@ -111,7 +111,7 @@ module maindec (input mips_decls_p::opcode_t opcode,
 	      jr = 1'b0;
 	   end
 	   OP_JAL: begin
-	      regwrite = 1'b0;
+	      regwrite = 1'b1;
 	      regdst = 1'b0;
 	      alusrc = 1'b0;
 	      branch = 1'b0;

@@ -1,5 +1,4 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-$stop called at time : 430 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjr.sv" Line 68
-$stop called at time : 430 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjr.sv" Line 68
-$stop called at time : 430 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjr.sv" Line 68
+Simulation failed - expected to write m[84]=7, actual value         17
+$stop called at time : 360 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjaljr.sv" Line 57

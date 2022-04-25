@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 25 17:25:23 2022
+# Process ID: 5228
+# Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12912 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab11\Lab11\Lab11.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source testbenchjr.tcl
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjr/DUV/mips/funct_d}} 
+restart
+run all
+close_sim
+launch_simulation
+source testbenchjr.tcl
+close_sim
+launch_simulation
+source testbenchjr.tcl
+current_wave_config {Untitled 3}
+log_wave {/testbenchjr/DUV/mips/opcode_d} 
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/funct_d}} 
+restart
+run all
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/U_DP/writereg_w}} 
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/U_DP/rs_d}} 
+restart
+run all
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/U_DP/rt_d}} 
+restart
+run all
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjr/DUV/mips/U_DP/writedata_e}} 
+restart
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbenchjal [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source testbenchjal.tcl
+current_wave_config {Untitled 4}
+add_wave {{/testbenchjal/DUV/mips/U_DP/result_w}} 
+restart
+run all
+close_sim
+launch_simulation
+source testbenchjal.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjaljr.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjaljr.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbenchjaljr [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+reset_run synth_1
+launch_simulation
+launch_simulation
+source testbenchjaljr.tcl
+current_wave_config {Untitled 6}
+add_wave {{/testbenchjaljr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 6}
+add_wave {{/testbenchjaljr/DUV/mips/funct_d}} 
+restart
+run all
+close_sim
+launch_simulation
+source testbenchjaljr.tcl
+close_sim

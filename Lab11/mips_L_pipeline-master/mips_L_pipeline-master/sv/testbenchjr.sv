@@ -47,11 +47,11 @@ module testbenchjr();
     always@(negedge clk)
     begin
         if(memwrite) begin
-            if(dataadr === 84 & writedata === 16) begin
+            if(dataadr === 84 & writedata === 24) begin
                 $display("Simulation succeeded");
                 @(posedge clk);
                 $stop;
-            end else if (writedata !== 16) begin
+            end else if (writedata !== 24) begin
                 $display("Simulation failed - expected to write m[84]=7, actual value %d",writedata);
                 @(posedge clk);
                 $stop;

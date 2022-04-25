@@ -2,11 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Apr 19 10:30:36 2022
-# Process ID: 5712
+# Start of session at: Mon Apr 25 17:44:30 2022
+# Process ID: 12312
 # Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/xsim.dir/testbenchjr_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/xsim.dir/testbenchjal_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/xsim.dir/testbenchjr_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/xsim.dir/testbenchjal_behav/webtalk/xsim_webtalk.tcl -notrace

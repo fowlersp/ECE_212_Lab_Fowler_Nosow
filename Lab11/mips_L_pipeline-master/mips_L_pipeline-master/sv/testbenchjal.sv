@@ -48,7 +48,7 @@ module testbenchjal();
     always@(negedge clk)
     begin
         if(memwrite) begin
-            if(dataadr === 84 & writedata === 7) begin
+            if(dataadr === 84 & writedata === 8) begin
                 $display("Simulation succeeded");
                 @(posedge clk);
                 $stop;

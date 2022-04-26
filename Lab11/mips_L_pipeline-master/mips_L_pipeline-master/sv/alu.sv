@@ -6,10 +6,10 @@
 //--------------------------------------------------------------
 
 module alu(
-    input logic [31:0] a, b,
+    input logic signed [31:0] a, b,
     input logic [2:0] f,
-    output logic [31:0] y,
-    output logic zero
+    output logic signed [31:0] y,
+    output logic signed zero
     );
 
   always_comb

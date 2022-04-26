@@ -37,5 +37,5 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/E
 INFO: [VRFC 10-311] analyzing module sl2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbenchjaljr.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbenchjaljr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

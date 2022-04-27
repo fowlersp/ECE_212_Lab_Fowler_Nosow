@@ -49,7 +49,7 @@ module testbenchjal();
     begin
         if(memwrite) begin
             if(dataadr === 84 & writedata === 8) begin
-                $display("Simulation succeeded");
+                $display("JAL Simulation Succeeded");
                 @(posedge clk);
                 $stop;
             end else if (dataadr !== 80) begin

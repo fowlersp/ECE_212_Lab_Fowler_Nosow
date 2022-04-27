@@ -1,11 +1,29 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fdf1263833884684bb8397b5c1ae6536 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fdf1263833884684bb8397b5c1ae6536 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot JALJR_TB_behav xil_defaultlib.JALJR_TB xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 23. Module JALJR_TB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv" Line 23. Module top2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv" Line 23. Module mips_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv" Line 23. Module controller_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv" Line 23. Module datapath_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv" Line 23. Module comparator has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv" Line 23. Module hazardunit has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 23. Module JALJR_TB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv" Line 23. Module top2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv" Line 23. Module mips_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv" Line 23. Module controller_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv" Line 23. Module datapath_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv" Line 23. Module comparator has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv" Line 23. Module hazardunit has a timescale but at least one module in design doesn't have timescale.
 WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
@@ -13,7 +31,7 @@ Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.mips_decls_p
 Compiling module xil_defaultlib.maindec
 Compiling module xil_defaultlib.aludec
-Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.controller_f
 Compiling module xil_defaultlib.pr_pc
 Compiling module xil_defaultlib.adder
 Compiling module xil_defaultlib.mux2(WIDTH=32)
@@ -21,16 +39,19 @@ Compiling module xil_defaultlib.pr_f_d
 Compiling module xil_defaultlib.regfile
 Compiling module xil_defaultlib.signext
 Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.comparator
 Compiling module xil_defaultlib.pr_d_e
 Compiling module xil_defaultlib.alu
 Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
 Compiling module xil_defaultlib.pr_e_m
 Compiling module xil_defaultlib.pr_m_w
-Compiling module xil_defaultlib.datapath
-Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.datapath_f
+Compiling module xil_defaultlib.hazardunit
+Compiling module xil_defaultlib.mips_f
 Compiling module xil_defaultlib.imem
 Compiling module xil_defaultlib.dmem
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.top2
+Compiling module xil_defaultlib.JALJR_TB
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot testbench_behav
+Built simulation snapshot JALJR_TB_behav

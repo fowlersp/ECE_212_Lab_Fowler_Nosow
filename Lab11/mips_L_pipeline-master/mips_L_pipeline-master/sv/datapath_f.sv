@@ -164,7 +164,7 @@ module datapath_f(input  logic        clk, reset,
   
   //forwarding muxes
   mux3 #(32)  U_SRCAMUX(.d0(rd1_e), .d1(result_w), .d2(aluout_m), .d3(32'd0), .s(forward_a_e), .y(srca_e));
-  mux3 #(32)  U_SRCB1MUX(.d0(rd3_e), .d1(result_w), .d2(aluout_m), .d3(32'd0), .s(forward_b_e), .y(writedata_e));
+  mux3 #(32)  U_SRCB1MUX(.d0(rd2_e), .d1(result_w), .d2(aluout_m), .d3(32'd0), .s(forward_b_e), .y(writedata_e));
 
 
   //--------------------------------------------------------------

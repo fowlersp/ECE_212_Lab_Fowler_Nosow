@@ -39,7 +39,7 @@ module testbench();
     begin
         if(memwrite) begin
             if(dataadr === 84 & writedata === 7) begin
-                $display("Simulation succeeded");
+                $display("Original Simulation Succeeded");
                 @(posedge clk);
                 $stop;
             end else if (dataadr !== 80) begin

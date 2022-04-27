@@ -48,7 +48,7 @@ module testbenchjr();
     begin
         if(memwrite) begin
             if(dataadr === 84 & writedata === 24) begin
-                $display("Simulation succeeded");
+                $display("JR Simulation Succeeded");
                 @(posedge clk);
                 $stop;
             end else if (writedata !== 24) begin

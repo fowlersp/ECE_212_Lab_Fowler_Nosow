@@ -48,7 +48,7 @@ logic        clk;
     begin
         if(memwrite) begin
             if(dataadr === 84 & writedata === -5) begin
-                $display("Simulation succeeded");
+                $display("JAL and JR Simulation Succeeded");
                 @(posedge clk);
                 $stop;
             end else if (writedata !== -5) begin

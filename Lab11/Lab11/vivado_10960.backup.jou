@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 26 07:57:06 2022
+# Process ID: 10960
+# Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5640 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab11\Lab11\Lab11.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbenchjaljr.tcl
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/srca_e}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/srcb_e}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/aluout_e}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjaljr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbenchjaljr/DUV/mips/funct_d}} 
+restart
+run all
+close_sim
+launch_simulation
+source testbenchjaljr.tcl
+current_wave_config {Untitled 2}
+add_wave {{/testbenchjaljr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 2}
+add_wave {{/testbenchjaljr/DUV/mips/funct_d}} 
+current_wave_config {Untitled 2}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/srca_e}} 
+current_wave_config {Untitled 2}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/srcb_e}} 
+current_wave_config {Untitled 2}
+add_wave {{/testbenchjaljr/DUV/mips/U_DP/aluout_e}} 
+restart
+run all
+close_sim
+launch_simulation
+source testbenchjaljr.tcl
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjaljr/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjaljr/DUV/mips/funct_d}} 
+current_wave_config {Untitled 3}
+add_wave {{/testbenchjaljr/DUV/pc}} 
+restart
+run all
+close_sim
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1

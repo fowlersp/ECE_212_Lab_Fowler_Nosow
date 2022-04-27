@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/adder.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/alu.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_decls_p.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/aludec.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/dmem.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/imem.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/maindec.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_d_e.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_e_m.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_f_d.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_m_w.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_pc.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/regfile.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/signext.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/sl2.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv" \
+"../../../../../mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -5,4 +5,84 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 23. Module JALJR_TB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv" Line 23. Module top2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv" Line 23. Module mips_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv" Line 23. Module controller_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/maindec.sv" Line 15. Module maindec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv" Line 23. Module datapath_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_pc.sv" Line 1. Module pr_pc has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_f_d.sv" Line 1. Module pr_f_d has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/regfile.sv" Line 8. Module regfile has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/signext.sv" Line 8. Module signext has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/sl2.sv" Line 9. Module sl2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv" Line 23. Module comparator has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_d_e.sv" Line 1. Module pr_d_e has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux3.sv" Line 23. Module mux3(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_e_m.sv" Line 1. Module pr_e_m has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_m_w.sv" Line 1. Module pr_m_w has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/hazardunit.sv" Line 23. Module hazardunit has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/imem.sv" Line 15. Module imem has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/dmem.sv" Line 14. Module dmem has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 23. Module JALJR_TB has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/top2.sv" Line 23. Module top2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mips_f.sv" Line 23. Module mips_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/controller_f.sv" Line 23. Module controller_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/maindec.sv" Line 15. Module maindec has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/datapath_f.sv" Line 23. Module datapath_f has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_pc.sv" Line 1. Module pr_pc has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_f_d.sv" Line 1. Module pr_f_d has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/regfile.sv" Line 8. Module regfile has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/signext.sv" Line 8. Module signext has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/sl2.sv" Line 9. Module sl2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/comparator.sv" Line 23. Module comparator has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/pr_d_e.sv" Line 1. Module pr_d_e has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=32) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/mux2.sv" Line 9. Module mux2(WIDTH=5) has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mips_decls_p
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller_f
+Compiling module xil_defaultlib.pr_pc
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.pr_f_d
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.pr_d_e
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.mux3(WIDTH=32)
+Compiling module xil_defaultlib.pr_e_m
+Compiling module xil_defaultlib.pr_m_w
+Compiling module xil_defaultlib.datapath_f
+Compiling module xil_defaultlib.hazardunit
+Compiling module xil_defaultlib.mips_f
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.top2
+Compiling module xil_defaultlib.JALJR_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot JALJR_TB_behav

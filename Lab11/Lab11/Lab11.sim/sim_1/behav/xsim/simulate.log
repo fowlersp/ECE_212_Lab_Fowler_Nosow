@@ -2,3 +2,5 @@ Vivado Simulator 2020.2
 Time resolution is 1 ps
 JAL and JR Simulation Succeeded
 $stop called at time : 300 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 53
+JAL and JR Simulation Succeeded
+$stop called at time : 300 ns : File "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv" Line 53

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  3 08:42:12 2022
+# Process ID: 2288
+# Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9852 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab11\Lab11\Lab11.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1088.648 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  3 08:43:02 2022...

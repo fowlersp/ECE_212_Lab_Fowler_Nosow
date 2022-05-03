@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Apr 27 08:54:18 2022
-# Process ID: 4816
+# Start of session at: Tue May  3 08:44:55 2022
+# Process ID: 3188
 # Current directory: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7216 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab11\Lab11\Lab11.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1708 C:\Users\fowlersp\Documents\ECE_212_Lab_Fowler_Nosow\Lab11\Lab11\Lab11.xpr
 # Log file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/vivado.log
 # Journal file: C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11\vivado.jou
 #-----------------------------------------------------------
@@ -13,360 +13,91 @@ start_gui
 open_project C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/Lab11/Lab11.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-source testbench.tcl
+source ADDTEST_TB.tcl
 current_wave_config {Untitled 1}
-add_wave {{/testbench/DUV/mips/opcode_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
 current_wave_config {Untitled 1}
-add_wave {{/testbench/DUV/mips/funct_d}} 
-current_wave_config {Untitled 1}
-add_wave {{/testbench/DUV/mips/instr_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
 restart
 run all
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top testbenchjal [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
 close_sim
 launch_simulation
-source testbenchjal.tcl
-current_wave_config {Untitled 2}
-add_wave {{/testbenchjal/DUV/mips/instr_d}} 
-current_wave_config {Untitled 2}
-add_wave {{/testbenchjal/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 2}
-add_wave {{/testbenchjal/DUV/mips/funct_d}} 
-current_wave_config {Untitled 2}
-add_wave {{/testbenchjal/DUV/pc}} 
-restart
-run all
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top testbenchjr [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
+source ADDTEST_TB.tcl
 close_sim
-reset_run synth_1
 launch_simulation
-source testbenchjr.tcl
+source ADDTEST_TB.tcl
 current_wave_config {Untitled 3}
-add_wave {{/testbenchjr/DUV/pc}} 
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
 current_wave_config {Untitled 3}
-add_wave {{/testbenchjr/DUV/mips/instr_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
+restart
+run all
 current_wave_config {Untitled 3}
-add_wave {{/testbenchjr/DUV/mips/opcode_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/U_DP/U_COMP/a}} 
 current_wave_config {Untitled 3}
-add_wave {{/testbenchjr/DUV/mips/funct_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/U_DP/U_COMP/b}} 
+restart
+run all
+current_wave_config {Untitled 3}
+add_wave {{/ADDTEST_TB/DUV/mips/U_DP/result_w}} 
 restart
 run all
 close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top testbenchjaljr [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
-source testbenchjaljr.tcl
+source ADDTEST_TB.tcl
 current_wave_config {Untitled 4}
-add_wave {{/testbenchjaljr/DUV/pc}} 
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
 current_wave_config {Untitled 4}
-add_wave {{/testbenchjaljr/DUV/mips/instr_d}} 
-current_wave_config {Untitled 4}
-add_wave {{/testbenchjaljr/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 4}
-add_wave {{/testbenchjaljr/DUV/mips/funct_d}} 
-restart
-run all
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/OG_TB.sv w ]
-add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/OG_TB.sv
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top OG_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/memfile2.dat
-launch_simulation
-source OG_TB.tcl
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/rs_d}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/rt_d}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/rs_e}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/rt_e}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_w}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/forward_a_e}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/forward_b_e}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_m}} 
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/alusrc_e}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/alucontrol_e}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/alucontrol_d}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-restart
-run all
-current_wave_config {Untitled 6}
-add_wave {{/OG_TB/DUV/mips/U_DP/regwrite_w}} 
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
 restart
 run all
 close_sim
 launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/instr}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/rs_d}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/rt_d}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/rs_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/rt_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/result_w}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/forward_a_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/forward_b_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_m}} 
-restart
-run all
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 7}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
+source ADDTEST_TB.tcl
+current_wave_config {Untitled 5}
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
+current_wave_config {Untitled 5}
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
 restart
 run all
 close_sim
 launch_simulation
-source OG_TB.tcl
+source ADDTEST_TB.tcl
+current_wave_config {Untitled 6}
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
+current_wave_config {Untitled 6}
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
+restart
+run all
+close_sim
+launch_simulation
+source ADDTEST_TB.tcl
+close_sim
+launch_simulation
+source ADDTEST_TB.tcl
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
+add_wave {{/ADDTEST_TB/DUV/pc}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/instr_d}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
+add_wave {{/ADDTEST_TB/DUV/mips/opcode_d}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
+add_wave {{/ADDTEST_TB/DUV/mips/flush_e}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
+add_wave {{/ADDTEST_TB/DUV/mips/stall_f}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_e}} 
+add_wave {{/ADDTEST_TB/DUV/mips/stall_d}} 
 current_wave_config {Untitled 8}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_m}} 
+add_wave {{/ADDTEST_TB/DUV/mips/forward_a_d}} 
+current_wave_config {Untitled 8}
+add_wave {{/ADDTEST_TB/DUV/mips/forward_b_d}} 
+current_wave_config {Untitled 8}
+add_wave {{/ADDTEST_TB/DUV/mips/forward_a_e}} 
+current_wave_config {Untitled 8}
+add_wave {{/ADDTEST_TB/DUV/mips/forward_b_e}} 
 restart
 run all
 close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-restart
-run all
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/U_DP/alusrc_e}} 
-restart
-run all
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/U_DP/writedata_e}} 
-restart
-run all
-current_wave_config {Untitled 9}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 10}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 10}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 10}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 11}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 11}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 11}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 12}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 12}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 12}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 13}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 13}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 13}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_e}} 
-restart
-run all
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_HU/forward_a_e}} 
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_HU/forward_b_e}} 
-restart
-run all
-current_wave_config {Untitled 14}
-add_wave {{/OG_TB/DUV/mips/U_DP/rd2_d}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 15}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 15}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 15}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/funct_d}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/U_DP/srca_e}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/U_DP/srcb_e}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/U_DP/result_w}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_e}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/pc}} 
-current_wave_config {Untitled 16}
-add_wave {{/OG_TB/DUV/mips/U_DP/aluout_m}} 
-restart
-run all
-close_sim
-launch_simulation
-source OG_TB.tcl
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/pc}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/flush_e}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/stall_f}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/stall_d}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/forward_a_d}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/forward_b_d}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/forward_a_e}} 
-current_wave_config {Untitled 17}
-add_wave {{/OG_TB/DUV/mips/forward_b_e}} 
-restart
-run all
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/memfilejaljr2.dat
-close_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv w ]
-add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_212_Lab_Fowler_Nosow/Lab11/mips_L_pipeline-master/mips_L_pipeline-master/sv/JALJR_TB.sv
-update_compile_order -fileset sim_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
 set_property top JALJR_TB [get_filesets sim_1]
@@ -376,44 +107,53 @@ set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
 launch_simulation
 source JALJR_TB.tcl
-current_wave_config {Untitled 18}
-add_wave {{/JALJR_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 18}
-add_wave {{/JALJR_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 18}
-add_wave {{/JALJR_TB/DUV/mips/funct_d}} 
-restart
-run all
-current_wave_config {Untitled 18}
+current_wave_config {Untitled 9}
 add_wave {{/JALJR_TB/DUV/instr}} 
+current_wave_config {Untitled 9}
+add_wave {{/JALJR_TB/DUV/mips/opcode_d}} 
+restart
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top OG_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source OG_TB.tcl
+current_wave_config {Untitled 10}
+add_wave {{/OG_TB/DUV/mips/opcode_d}} 
+current_wave_config {Untitled 10}
+add_wave {{/OG_TB/DUV/mips/instr_d}} 
 restart
 run all
 close_sim
 launch_simulation
-source JALJR_TB.tcl
+source OG_TB.tcl
+current_wave_config {Untitled 11}
+add_wave {{/OG_TB/DUV/mips/instr_d}} 
+current_wave_config {Untitled 11}
+add_wave {{/OG_TB/DUV/mips/opcode_d}} 
+restart
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top JALJR_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
 close_sim
 launch_simulation
 source JALJR_TB.tcl
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/pc}} 
-current_wave_config {Untitled 20}
+current_wave_config {Untitled 12}
 add_wave {{/JALJR_TB/DUV/mips/instr_d}} 
-current_wave_config {Untitled 20}
+current_wave_config {Untitled 12}
 add_wave {{/JALJR_TB/DUV/mips/opcode_d}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/flush_e}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/stall_f}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/stall_d}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/forward_a_d}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/forward_b_d}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/forward_a_e}} 
-current_wave_config {Untitled 20}
-add_wave {{/JALJR_TB/DUV/mips/forward_b_e}} 
 restart
 run all
 close_sim
